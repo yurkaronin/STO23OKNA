@@ -1,0 +1,56 @@
+// кнопка менюхи 
+.button-menu {
+  position: relative;
+  padding: 18px 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  display: none;
+
+}
+
+.button-menu span,
+.button-menu span::after,
+.button-menu span::before {
+  position: absolute;
+  width: 48px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.button-menu span::after,
+.button-menu span::before {
+  content: "";
+  display: block;
+  transition: 0.3s;
+}
+
+.button-menu span::before {
+  transform: translateY(-11px);
+}
+
+.button-menu span::after {
+  transform: translateY(11px);
+}
+
+.button-menu.active span {
+  height: 0;
+}
+
+.button-menu.active span:after {
+  transform: rotate(45deg);
+}
+
+.button-menu.active span:before {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .button-menu {
+    display: flex;
+  }
+  
+}

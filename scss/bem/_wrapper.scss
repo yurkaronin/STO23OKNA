@@ -1,0 +1,21 @@
+// обёртка  -----------------------------------------
+.wrapper {
+  width: calc(1312px + 64px);
+  margin: 0 auto;
+  padding: 0 32px;
+
+  @media (max-width: 1024px) {
+    width: calc(928px + 96px);
+    padding: 0 48px;
+  }
+
+  @media (max-width: 768px) {
+    width: calc(736px + 32px);
+    padding: 0 16px;
+  }
+
+  @media (max-width: 360px) {
+    width: calc(320px + 32px);
+    padding: 0 16px;
+  }
+}

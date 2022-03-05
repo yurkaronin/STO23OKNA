@@ -1,0 +1,28 @@
+.title {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 140%;
+  color: #1C213F;
+  text-transform: uppercase;
+
+  &--decorate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 16px;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 55%;
+      width: 6px;
+      background-color: #A6BF2A;
+      position: absolute;
+      left: 0;
+    }
+  }
+}

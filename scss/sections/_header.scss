@@ -1,0 +1,76 @@
+// шапка -----------------------------------------
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+.header__flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.header__logo {
+  max-width: 131px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.header__navigation {
+  max-width: max-content;
+  width: 100%;
+  flex-basis: 760px;
+  flex-grow: 4;
+}
+
+.header__contacts {
+  max-width: 210px;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: auto;
+
+}
+
+@media (max-width: 1024px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .header__flex {
+    padding: 24px 0 23px;
+  }
+
+  .header__contacts {
+    max-width: 245px;
+    position: relative;
+    padding-right: 32px;
+  
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #DDDEE2;
+    }
+  
+  }
+
+  .header__contacts .telephone {
+    line-height: 220%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__flex {
+    padding: 12px 0;
+    gap: 11px 37px;
+  }
+}

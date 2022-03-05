@@ -1,0 +1,69 @@
+// кнопка 
+.button {
+  display: flex;
+  gap: 0;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: max-content;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.button__text {
+  color: #ffffff;
+  background-color: #4680FE;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 20px 11px 20px 24px;
+  padding-right: 20px + 56px;
+  box-shadow: 0 -4px #00000029 inset;
+
+}
+
+.button__icon {
+  background: #A6BF2A;
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  display: flex;
+  height: 100%;
+  width: 56px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -4px #00000029 inset;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.button {
+
+  &:hover,
+  &:focus {
+    .button__text {
+      background-color: #00B2D2;
+    }
+  }
+
+  &:active {
+    transform: translateY(4px);
+
+    .button__text {
+      box-shadow: 0 0 transparent;
+      background-color: #4680FE;
+    }
+
+    .button__icon {
+      box-shadow: 0 0 transparent;
+    }
+  }
+
+}

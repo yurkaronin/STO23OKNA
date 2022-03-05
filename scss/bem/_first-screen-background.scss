@@ -1,0 +1,55 @@
+// обёртка с фоном -----------------------------------------
+.first-screen-background {
+  background-color: #887D7A;
+  background-image: url(../img/bg/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  // min-height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  &::after {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 49.94%), linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 36.42%), linear-gradient(0deg, rgba(0, 1, 20, 0.15), rgba(0, 1, 20, 0.15));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first-screen-background {
+    background-image: url(../img/bg/hero-1024.jpg);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .first-screen-background {
+    background-image: url(../img/bg/hero-768.jpg);
+  }
+
+}
+
+@media (max-width: 360px) {
+  .first-screen-background {
+    background-image: none;
+    background-color: #ffffff;
+    color: #000000;
+
+    &::after {
+      display: none;
+    }
+  }
+
+}

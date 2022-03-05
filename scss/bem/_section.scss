@@ -1,0 +1,10 @@
+// Секция 
+.section {
+  padding: 50px 0 60px;
+}
+
+.section__flex {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}

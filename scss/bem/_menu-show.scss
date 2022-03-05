@@ -1,0 +1,37 @@
+.menu-show {
+  .header__navigation {
+    display: block;
+    order: 100;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    color: #1C213F;
+    padding-bottom: 47px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 24px 24px;
+  }
+  .logo .logo-text {
+    fill: #1C213F;
+  }
+
+  .button-menu span,
+  .button-menu span::after,
+  .button-menu span::before {
+    background-color: #1C213F;
+  }
+  .header .telephone {
+    color: #1C213F;
+  }
+
+  .header .whatsapp img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+  }
+
+  .header__flex {
+    padding: 12px 0 0;
+  }
+}
+
