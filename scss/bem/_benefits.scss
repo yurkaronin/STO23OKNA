@@ -1,7 +1,6 @@
 // преимущества 
 .benefits {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 42px 0 43px;
 
   ul {
     list-style: none;
@@ -9,8 +8,7 @@
     margin: 0;
 
     display: flex;
-    // gap: 16px;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 
@@ -22,6 +20,16 @@
   display: flex;
   align-items: center;
   gap: 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 42px 32px 43px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
 
   svg {
     max-width: 56px;
@@ -34,5 +42,19 @@
   font-size: 18px;
   line-height: 133%;
   color: #FFFFFF;
-  max-width: 240px;
+  max-width: calc(100% - 56px - 32px);
+}
+
+
+@media (max-width: 1024px) {
+  .benefits__item-flex {
+    gap: 16px;
+    padding: 20px 24px;
+  }
+
+  .benefits__text {
+    font-size: 16px;
+    max-width: calc(100% - 56px - 16px);
+  }
+
 }

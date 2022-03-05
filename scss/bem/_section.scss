@@ -8,3 +8,12 @@
   gap: 40px;
   flex-direction: column;
 }
+
+@media (max-width: 102px) {
+  .section {
+    padding: 55px 0 40px;
+  }
+  .section__flex {
+    gap: 36px;
+  }
+}

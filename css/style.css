@@ -190,6 +190,15 @@ textarea {
           flex-direction: column;
 }
 
+@media (max-width: 102px) {
+  .section {
+    padding: 55px 0 40px;
+  }
+  .section__flex {
+    gap: 36px;
+  }
+}
+
 .title {
   font-family: 'Oswald', sans-serif;
   margin: 0;
@@ -499,7 +508,6 @@ textarea {
 
 .benefits {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 42px 0 43px;
 }
 
 .benefits ul {
@@ -509,9 +517,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -526,6 +534,16 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   gap: 32px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 42px 32px 43px;
+}
+
+.benefits__item-flex:first-child {
+  padding-left: 0;
+}
+
+.benefits__item-flex:last-child {
+  border-right: none;
 }
 
 .benefits__item-flex svg {
@@ -538,7 +556,18 @@ textarea {
   font-size: 18px;
   line-height: 133%;
   color: #FFFFFF;
-  max-width: 240px;
+  max-width: calc(100% - 56px - 32px);
+}
+
+@media (max-width: 1024px) {
+  .benefits__item-flex {
+    gap: 16px;
+    padding: 20px 24px;
+  }
+  .benefits__text {
+    font-size: 16px;
+    max-width: calc(100% - 56px - 16px);
+  }
 }
 
 .header {
@@ -690,13 +719,14 @@ textarea {
 }
 
 .when-repairs__img {
-  border-radius: 24px 24px 24px 6px;
-  overflow: hidden;
   position: relative;
+  margin-bottom: 16px;
 }
 
 .when-repairs__img img {
   display: block;
+  width: 100%;
+  border-radius: 24px 24px 24px 6px;
 }
 
 .when-repairs__icon {
@@ -719,15 +749,32 @@ textarea {
 }
 
 .when-repairs__name {
+  margin: 0;
   font-family: Oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
+  line-height: 140%;
   text-transform: uppercase;
-  /* dark */
   color: #1C213F;
+  margin-bottom: 6px;
+}
+
+.when-repairs__text {
+  margin: 0;
+}
+
+.when-repairs__img:hover .when-repairs__icon {
+  background-color: #00B2D2;
+}
+
+@media (max-width: 1024px) {
+  .when-repairs__list ul {
+    gap: 32px;
+  }
+  .when-repairs__list li {
+    width: calc(50% - 16px);
+  }
 }
 
 .menu-show .header__navigation {
