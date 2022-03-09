@@ -1,0 +1,26 @@
+
+.always-ready {
+  display: flex;
+  align-items: center;
+  gap: 16px 30px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #DDDEE2;
+
+}
+
+.always-ready__title {
+  font-family: var(--ff-4);
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+color: #1C213F;
+margin: 0;
+}
+
+@media (max-width: 550px) {
+  .always-ready__title {
+  font-size: 18px;
+  }
+}

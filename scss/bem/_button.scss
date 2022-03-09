@@ -49,7 +49,7 @@
   &:hover,
   &:focus {
     .button__text {
-      background-color: #00B2D2;
+      background-color: #A6BF2A;
     }
   }
 
@@ -66,4 +66,21 @@
     }
   }
 
+}
+
+.button--simple {
+  background: #00B2D2;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--ff-4);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.429;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 16px 17px;
+
+  &:hover {
+    background-color: #A6BF2A;
+  }
 }

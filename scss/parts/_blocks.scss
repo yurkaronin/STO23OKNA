@@ -2,6 +2,12 @@
 @import "../bem/section";
 @import "../bem/title";
 @import "../bem/logo";
+@import "../bem/list-reset";
+@import "../bem/buttons-list";
+@import "../bem/always-ready";
+
+
+
 
 @import "../bem/first-screen-background";
 @import "../bem/wrapper";
@@ -13,11 +19,11 @@
 
 
 @import "../sections/header";
-
 @import "../sections/hero";
 @import "../sections/when-repairs";
-
 @import "../sections/our-services";
+@import "../sections/choose-us";
+@import "../sections/footer";
 
 // Активности всякие 
 @import "../bem/menu-show";

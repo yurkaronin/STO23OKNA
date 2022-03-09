@@ -49,6 +49,7 @@
   color: #1C213F;
   margin-bottom: 6px;
 }
+
 .when-repairs__text {
   margin: 0;
 }
@@ -66,7 +67,15 @@
   .when-repairs__list ul {
     gap: 32px;
   }
+
   .when-repairs__list li {
     width: calc(50% - 16px);
+  }
 }
+
+@media (max-width: 600px) {
+  .when-repairs__list li {
+    width: 100%;
+  }
+
 }
