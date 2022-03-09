@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+  --header-height: 60px;
+  --ff-1: 'Open Sans', sans-serif;
+  --ff-2: 'Oswald', sans-serif;
+  --ff-3: 'Roboto', sans-serif;
+  --ff-4: 'Rubik', sans-serif;
+}
+
 /* rubik-regular - latin_cyrillic */
 @font-face {
   font-family: 'Rubik';
@@ -54,10 +62,6 @@
 }
 
 /* базовые стили  */
-:root {
-  --header-height: 60px;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

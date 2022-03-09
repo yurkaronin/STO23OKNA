@@ -1,11 +1,3 @@
-let header = document.querySelector('.header');
-let headerHeight = header.clientHeight;
-let headerLogo = document.querySelector('.header__logo img');
-
-// получаем высоту шапки и передаём в глобальную переменную
-document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
-
-
 // прилипающая шапка
 window.onscroll = function showHeader() {
 

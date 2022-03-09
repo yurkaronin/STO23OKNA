@@ -1,6 +1,4 @@
-// кнопка меню
-let menuButton = document.querySelector('.button-menu');
-
+// показать меню при клике на кнопку
 if (menuButton) {
   menuButton.addEventListener('click', function (r) {
     // document.body.classList.toggle('custom-lock');
