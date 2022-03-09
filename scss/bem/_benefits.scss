@@ -58,3 +58,36 @@
   }
 
 }
+
+@media (max-width: 710px) {
+  .benefits__text {
+    font-size: 14px;
+  }
+
+  .benefits__item-flex {
+    gap: 10px;
+    padding: 20px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits__text {
+    font-size: 16px;
+    color: #1C213F;
+  }
+
+  .benefits__item-flex {
+    max-width: 100%;
+    gap: 24px;
+    border-top: 1px solid #DDDEE2;
+
+    &:last-child {
+      border-bottom: 1px solid #DDDEE2;
+    }
+  }
+
+  .benefits__item-flex svg path {
+    stroke: #4680FE;
+  }
+
+}

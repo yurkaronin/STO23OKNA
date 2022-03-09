@@ -2,6 +2,15 @@
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Rubik', sans-serif;
+
+/* базовые стили  */
+:root {
+  // --color-primary: #fcc53b;
+  // --color-primary2: #FCA33B;
+  // --color-primary3: #547DFF;
+  --header-height: 60px;
+}
+
 html {
   box-sizing: border-box;
 }

@@ -48,9 +48,18 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .button-menu {
     display: flex;
   }
-  
+
+}
+
+@media (max-width: 600px) {
+
+  .button-menu span,
+  .button-menu span::after,
+  .button-menu span::before {
+    width: 32px;
+  }
 }

@@ -26,91 +26,83 @@
 </head>
 
 <body>
-  <div class="first-screen-background">
-    <header class="header">
-      <div class="wrapper">
-        <div class="header__flex">
-          <div class="header__logo">
-            <svg class="logo" width="131" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#a)">
-                <path d="M20.415-.37 41.12 15.836v3.835l-20.705-11.9-20.706 11.9v-3.835L20.415-.37Z" fill="#A6BF2A" />
-                <path
-                  d="M3.601 19.829v19.18l16.814 8.925v-37.03L3.6 19.828Zm7.9-.979 5.41-2.075v12.154h-5.41V18.85Zm-5.409 2.074 4.359-1.671v9.676h-4.36v-8.005Zm5.41 18.79v-9.728h5.41V41.67l-5.41-1.957Zm-5.41-1.958v-7.77h4.359v9.348l-4.359-1.578Z"
-                  fill="#00B2D2" />
-                <path class="logo-text"
-                  d="M24.523 39.763V28.819c0-1.655.394-2.957 1.18-3.907.788-.95 1.963-1.425 3.527-1.425 1.57 0 2.75.474 3.545 1.425.794.95 1.19 2.252 1.19 3.907v1.905h-2.202v-2.039c0-2.037-.825-3.057-2.474-3.057-.825 0-1.443.266-1.856.797-.412.532-.618 1.286-.618 2.26v11.197c0 .974.206 1.727.618 2.259.413.532 1.03.798 1.856.798 1.65 0 2.474-1.019 2.474-3.057v-2.748h2.203v2.629c0 1.654-.397 2.955-1.191 3.9-.795.945-1.976 1.418-3.545 1.418-1.564 0-2.74-.473-3.527-1.418-.786-.945-1.18-2.246-1.18-3.9ZM35.104 25.85v-2.157h10.103v2.156H41.33v19.025h-2.35V25.849h-3.876Zm13.59 14.032c0 .985.208 1.74.626 2.267.417.527 1.043.79 1.878.79 1.669 0 2.503-1.02 2.503-3.057V28.685c0-.974-.205-1.727-.618-2.259-.413-.532-1.041-.798-1.885-.798-.835 0-1.461.266-1.878.798-.418.532-.626 1.285-.626 2.26v11.196Zm-2.291-.118V28.819c0-1.664.405-2.97 1.217-3.915.811-.945 2.003-1.418 3.578-1.418 1.588 0 2.794.473 3.618 1.418.823.946 1.235 2.251 1.235 3.915v10.945c0 1.644-.412 2.941-1.235 3.891-.824.95-2.03 1.426-3.618 1.426-1.564 0-2.755-.475-3.57-1.426-.817-.95-1.225-2.247-1.225-3.891Zm11.504 5.11v-1.816c0-.926.131-1.798.391-2.615a8.156 8.156 0 0 1 1.025-2.149c.424-.615.888-1.208 1.394-1.78a95.986 95.986 0 0 1 1.526-1.684c.51-.55.976-1.11 1.396-1.676a7.443 7.443 0 0 0 1.018-1.935 6.746 6.746 0 0 0 .388-2.283c0-1.112-.198-1.946-.593-2.503-.395-.556-1.018-.834-1.867-.834-.829 0-1.447.276-1.852.827-.405.552-.608 1.314-.608 2.289v1.877h-2.218v-1.714c0-1.674.394-2.991 1.181-3.951s1.972-1.44 3.556-1.44c1.583 0 2.771.475 3.563 1.425.792.95 1.188 2.262 1.188 3.936 0 .867-.132 1.7-.396 2.496a8.862 8.862 0 0 1-1.02 2.134 19.024 19.024 0 0 1-1.385 1.832 76.531 76.531 0 0 1-1.517 1.728 28.384 28.384 0 0 0-1.385 1.647 7.863 7.863 0 0 0-1.032 1.765 4.943 4.943 0 0 0-.403 1.943v.34h6.888v2.141h-9.238Zm11.153-5.14v-1.448h2.203v1.596c0 .974.204 1.727.615 2.259.41.532 1.025.798 1.844.798 1.64 0 2.46-1.088 2.46-3.264v-1.64c0-1.033-.217-1.809-.651-2.326-.434-.517-1.096-.79-1.983-.82h-1.26v-2.113h1.377c.79-.028 1.407-.294 1.851-.797.444-.502.666-1.206.666-2.112v-.96c0-2.206-.82-3.309-2.46-3.309-.819 0-1.434.271-1.844.813-.41.542-.615 1.3-.615 2.274v1.094H69.06v-.96c0-1.664.395-2.97 1.184-3.915.79-.945 1.969-1.417 3.537-1.417 1.574 0 2.76.472 3.556 1.417.796.945 1.196 2.25 1.196 3.915v.531c0 1.093-.216 2.014-.647 2.762-.43.748-1.067 1.28-1.908 1.596 1.703.64 2.555 2.102 2.555 4.386v1.64c0 1.674-.4 2.983-1.196 3.929-.797.945-1.982 1.418-3.556 1.418-1.568 0-2.747-.473-3.537-1.418-.789-.945-1.184-2.255-1.184-3.93Zm17.797.148c0 .985.209 1.74.626 2.267.417.527 1.043.79 1.878.79 1.669 0 2.504-1.02 2.504-3.057V28.685c0-.974-.206-1.727-.62-2.259-.411-.532-1.04-.798-1.884-.798-.835 0-1.46.266-1.878.798-.418.532-.626 1.285-.626 2.26v11.196Zm-2.29-.118V28.819c0-1.664.405-2.97 1.216-3.915.812-.945 2.004-1.418 3.578-1.418 1.588 0 2.795.473 3.618 1.418.823.946 1.235 2.251 1.235 3.915v10.945c0 1.644-.412 2.941-1.235 3.891-.823.95-2.03 1.426-3.618 1.426-1.564 0-2.754-.475-3.57-1.426-.816-.95-1.225-2.247-1.225-3.891Zm11.503 5.11v-21.18h2.35v10.235l5.597-10.236h2.363l-5.316 9.66 5.507 11.52h-2.408l-4.51-9.201-1.233 2.098v7.104h-2.35Zm11.932 0v-21.18h2.35v9.541h5.168v-9.542h2.35v21.18h-2.35v-9.526h-5.168v9.527h-2.35Zm14.674-6.293h4.575l-2.316-12.133-2.259 12.133Zm-3.375 6.293 4.021-21.18h3.453l4.025 21.18h-2.35l-.814-4.269h-5.337l-.795 4.269h-2.203Z"
-                  fill="#fff" />
-              </g>
-              <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h130.8v48H0z" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__flex">
+        <div class="header__logo">
+          <picture>
+            <source media="(max-width: 600px)" srcset="img/logotype/logo-black.svg">
 
-          <div class="header__navigation main-nav">
-            <nav>
-              <ul>
-                <li><a href="#" class="main-nav__link"><span>Ремонт окон</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link active"><span>Услуги</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link"><span>Преимущества</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link"><span>Галерея</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link"><span>Отзывы</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link"><span>Вопрос-ответ</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-                <li><a href="#" class="main-nav__link"><span>Контакты</span>
-                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
-                      stroke-linecap="round" />
-                  </svg></a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="header__contacts">
-            <a href="https://wa.me/79181996465" class="whatsapp">
-              <img src="img/icons/whatsapp.svg" alt=""></a>
-            <a href="tel:89181996465" class="telephone">+7 918 075-56-83</a>
-          </div>
-
-
-          <button class="button-menu">
-            <span></span>
-          </button>
+            <img src="img/logotype/logo.svg" alt="логотип">
+          </picture>
+          
         </div>
 
+        <div class="header__navigation main-nav">
+          <nav>
+            <ul>
+              <li><a href="#" class="main-nav__link"><span>Ремонт окон</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link active"><span>Услуги</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link"><span>Преимущества</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link"><span>Галерея</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link"><span>Отзывы</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link"><span>Вопрос-ответ</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+              <li><a href="#" class="main-nav__link"><span>Контакты</span>
+                  <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg></a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__contacts">
+          <a href="https://wa.me/79181996465" class="whatsapp">
+            <img src="img/icons/whatsapp.svg" alt=""></a>
+          <a href="tel:89181996465" class="telephone">+7 918 075-56-83</a>
+        </div>
+
+
+        <button class="button-menu">
+          <span></span>
+        </button>
       </div>
-    </header>
+
+    </div>
+  </header>
+  <div class="first-screen-background">
+    
 
     <section class="hero">
+      <img src="img/content/hero.jpg" class="hero__image" alt="фото монтажника" width="360" height="240">
       <div class="wrapper">
-        <img src="img/content/hero.jpg" class="hero__image" alt="фото монтажника" load="lazy" width="360" height="240">
+        
 
-        <div class="hero__felx">
+        <div class="hero__flex">
 
           <h1 class="hero__title">Установка и ремонт пластиковых окон в Краснодаре</h1>
 
@@ -141,50 +133,19 @@
               <span class="benefits__text">Бесплатный выезд специалиста в Краснодаре</span>
             </li>
             <li class="benefits__item-flex">
-              <svg width="58" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M29 11.2v2.55m-7.636-.5 1.273 2.208m-6.863 3.392 2.204 1.275M15.774 34.15l2.204-1.275m3.386 6.875 1.273-2.209M29 41.8v-2.55m7.636.5-1.272-2.209m6.862-3.391-2.204-1.275m2.204-14.025-2.204 1.275m-3.386-6.875-1.272 2.208M23.91 22.675l5.09 5.1 7.636-7.65"
-                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
-                <path
-                  d="M41.983 4.562A25.295 25.295 0 0 0 29 1C14.941 1 3.545 12.416 3.545 26.5v1.275H1L7.364 36.7l5.09-8.925H9.91V26.5C9.91 15.938 18.457 7.375 29 7.375c6.8 0 12.77 3.562 16.152 8.926M14.05 47.141A25.314 25.314 0 0 0 29 52c14.058 0 25.454-11.416 25.454-25.5v-1.275H57L50.636 16.3l-5.09 8.925h2.545V26.5c0 10.562-8.548 19.125-19.091 19.125-6.8 0-12.77-3.562-16.152-8.926"
-                  stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+              <svg width="56" height="58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.571 37.465h20.572c.71 0 1.285.583 1.285 1.302v3.907" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M47.366 33.419V29.65l-19.752 4.376a2.488 2.488 0 0 0-2.185 2.457v19.214c0 .718.576 1.302 1.285 1.302h24.429c.71 0 1.286-.584 1.286-1.302v-5.21" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M52.428 42.674s-.183 1.303-1.285 1.303H46c-1.826 0-3.123 1.43-3.123 3.232 0 1.802 1.297 3.28 3.123 3.28h6.428c1.218 0 2.572-1.405 2.572-2.605v-2.605c0-.873-.368-2.605-2.572-2.605ZM38.286 25.852V1H6.143L1 6.21v45.58h19.392" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.715 4.907v3.907H4.857M19 16.628h-9m9 5.209h-9m9 5.21h-9m9 5.209h-9m20.572-15.628h-5.143m5.143 5.209h-5.143m5.143 5.21h-5.143" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
 
               <span class="benefits__text">Работаем только по фиксированным ценам</span>
             </li>
             <li class="benefits__item-flex">
-              <svg width="57" height="50" viewBox="0 0 57 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M32.1702 28.0039H38.0597C38.8473 28.0039 39.5836 28.3878 40.028 29.0289L44.0851 35.0484C45.4255 35.0484 46.468 35.9196 46.468 37.642V42.0882C46.468 43.3844 45.4005 44.4399 44.0851 44.4399H42.8936"
-                  stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M21.4469 20.9595H32.1703V44.4411H20.2554" stroke="white" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M10.7233 44.4412H4.76587" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path
-                  d="M39.2446 49C41.1776 49 42.7446 47.433 42.7446 45.5C42.7446 43.567 41.1776 42 39.2446 42C37.3116 42 35.7446 43.567 35.7446 45.5C35.7446 47.433 37.3116 49 39.2446 49Z"
-                  stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                <path
-                  d="M16.6064 49C18.5394 49 20.1064 47.433 20.1064 45.5C20.1064 43.567 18.5394 42 16.6064 42C14.6734 42 13.1064 43.567 13.1064 45.5C13.1064 47.433 14.6734 49 16.6064 49Z"
-                  stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M32.1702 44.4412H35.7446" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M34.5532 35.0483H44.0851" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M0 33.8745H19.0638" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M10.7234 28.0039H26.2128" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M8.3405 28.0039H5.95752" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M19.0639 20.9595H16.6809" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linejoin="round" />
-                <path d="M45.2766 15.089L38.1277 18.6112V5.69629" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M20.6079 15.1136C22.2534 7.06296 29.4714 1 38.1275 1C47.9978 1 55.9999 8.88514 55.9999 18.6112C55.9999 23.8441 53.6848 28.5428 50.0079 31.7692"
-                  stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
-                  stroke-linejoin="round" />
+              <svg width="58" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29 11.2v2.55m-7.636-.5 1.273 2.208m-6.863 3.392 2.204 1.275M15.774 34.15l2.204-1.275m3.386 6.875 1.273-2.209M29 41.8v-2.55m7.636.5-1.272-2.209m6.862-3.391-2.204-1.275m2.204-14.025-2.204 1.275m-3.386-6.875-1.272 2.208M23.91 22.675l5.09 5.1 7.636-7.65" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M41.983 4.562A25.295 25.295 0 0 0 29 1C14.941 1 3.545 12.416 3.545 26.5v1.275H1L7.364 36.7l5.09-8.925H9.91V26.5C9.91 15.938 18.457 7.375 29 7.375c6.8 0 12.77 3.562 16.152 8.926M14.05 47.141A25.314 25.314 0 0 0 29 52c14.058 0 25.454-11.416 25.454-25.5v-1.275H57L50.636 16.3l-5.09 8.925h2.545V26.5c0 10.562-8.548 19.125-19.091 19.125-6.8 0-12.77-3.562-16.152-8.926" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
               </svg>
 
               <span class="benefits__text">Отремонтируем окна уже сегодня</span>
@@ -223,8 +184,11 @@
                 <img src="img/when-repairs/2.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
                 <div class="when-repairs__icon">
                   <svg width="32" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m16 15 2 3 5-5M9 22l3 5m6-9-2 6M5 35l6-3 1-5 4-3 6-1" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/>
-                    <path d="M31 43c0 1.104-1.075 2-2.4 2H3.4C2.075 45 1 44.104 1 43V3c0-1.104 1.075-2 2.4-2h25.2c1.325 0 2.4.896 2.4 2v40ZM4 5h24m-1 0v36M5 5v36m-1 0h24" stroke="#fff" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="m16 15 2 3 5-5M9 22l3 5m6-9-2 6M5 35l6-3 1-5 4-3 6-1" stroke="#fff" stroke-width="2"
+                      stroke-miterlimit="10" />
+                    <path
+                      d="M31 43c0 1.104-1.075 2-2.4 2H3.4C2.075 45 1 44.104 1 43V3c0-1.104 1.075-2 2.4-2h25.2c1.325 0 2.4.896 2.4 2v40ZM4 5h24m-1 0v36M5 5v36m-1 0h24"
+                      stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
                   </svg>
                 </div>
               </div>
@@ -236,9 +200,16 @@
                 <img src="img/when-repairs/3.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
                 <div class="when-repairs__icon">
                   <svg width="42" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.479 13c0-3.89-3.134-7.043-7-7.043s-7 3.153-7 7.043c0 1.652.458 2.87 1.294 4.521.836 1.652.836 3.305-.836 4.957-2.508 2.478-1.672 4.956 1.672 4.956" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M17.307 33.217c0 3.194 2.779 5.783 6.207 5.783s5.7-2.613 7.034-6.609c2.483-7.435 9.931-10.739 9.931-19.826 0-6.388-5.373-11.565-12-11.565s-12 5.178-12 11.565M8.072 33.106c5.858-5.858 5.858-15.355 0-21.213" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4.536 29.571c3.905-3.905 3.905-10.237 0-14.143M1 26.036a5 5 0 0 0 0-7.071" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                      d="M35.479 13c0-3.89-3.134-7.043-7-7.043s-7 3.153-7 7.043c0 1.652.458 2.87 1.294 4.521.836 1.652.836 3.305-.836 4.957-2.508 2.478-1.672 4.956 1.672 4.956"
+                      stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path
+                      d="M17.307 33.217c0 3.194 2.779 5.783 6.207 5.783s5.7-2.613 7.034-6.609c2.483-7.435 9.931-10.739 9.931-19.826 0-6.388-5.373-11.565-12-11.565s-12 5.178-12 11.565M8.072 33.106c5.858-5.858 5.858-15.355 0-21.213"
+                      stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M4.536 29.571c3.905-3.905 3.905-10.237 0-14.143M1 26.036a5 5 0 0 0 0-7.071" stroke="#fff"
+                      stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </div>
               </div>
@@ -250,13 +221,136 @@
                 <img src="img/when-repairs/4.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
                 <div class="when-repairs__icon">
                   <svg width="45" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.231 34.707a2.432 2.432 0 0 0-2.432 2.433c0 1.894 1.884 3.429 3.777 3.429 2.67 0 4.487-2.164 4.487-4.835 0-3.765-2.681-7.733-9.558-7.733H1m37.168-13.128a2.432 2.432 0 0 1-2.432-2.432 3.429 3.429 0 0 1 3.429-3.43A4.835 4.835 0 0 1 44 13.846c0 3.766-2.829 7.153-8.408 7.153H14M24.355 6.895a2.434 2.434 0 0 1-2.513-2.35 3.429 3.429 0 0 1 3.312-3.542 4.835 4.835 0 0 1 4.995 4.67C30.275 9.436 27.614 13 21.504 13H6" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                      d="M25.231 34.707a2.432 2.432 0 0 0-2.432 2.433c0 1.894 1.884 3.429 3.777 3.429 2.67 0 4.487-2.164 4.487-4.835 0-3.765-2.681-7.733-9.558-7.733H1m37.168-13.128a2.432 2.432 0 0 1-2.432-2.432 3.429 3.429 0 0 1 3.429-3.43A4.835 4.835 0 0 1 44 13.846c0 3.766-2.829 7.153-8.408 7.153H14M24.355 6.895a2.434 2.434 0 0 1-2.513-2.35 3.429 3.429 0 0 1 3.312-3.542 4.835 4.835 0 0 1 4.995 4.67C30.275 9.436 27.614 13 21.504 13H6"
+                      stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
               </div>
               <h3 class="when-repairs__name">В квартире холодно</h3>
               <p class="when-repairs__text">с окон дует/окна промерзают</p>
             </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section our-services">
+      <div class="wrapper section__flex">
+        <h2 class="title title--decorate">Наши услуги</h2>
+
+        <div class="our-services__list">
+          <ul>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/1.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Москитная сетка</h3>
+              <span class="our-services__price">от 1100 р./шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/2.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Ремонт окна</h3>
+              <span class="our-services__price">400-800 р./шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/3.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Ремонт двери входной</h3>
+              <span class="our-services__price">от 600 р./шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/4.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Замена стеклопакета</h3>
+              <span class="our-services__price">от 3500 р./кв.м..</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/5.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Замена резинки</h3>
+              <span class="our-services__price">от 80 р./мп</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/6.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Ручка оконная</h3>
+              <span class="our-services__price">от 300 р./1 шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/7.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Замена фурнитуры</h3>
+              <span class="our-services__price">от 3000 р./1 ком.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/8.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Детские замки</h3>
+              <span class="our-services__price">от 700 р./1 шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/9.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Поворотно-откидная створка из глухой</h3>
+              <span class="our-services__price">от 5000 р./1 створка</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/10.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Ручка с 2-х сторон на входные двери</h3>
+              <span class="our-services__price">от 2800 р./1 шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/11.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Набор курильщика</h3>
+              <span class="our-services__price">600 р./1 шт.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+            <li>
+              <div class="our-services__img">
+                <img src="img/our-services/12.jpg" alt="анонс новости" width="304" height="176" loading="lazy">
+              </div>
+              <h3 class="our-services__name">Замена подоконников премиум класса</h3>
+              <span class="our-services__price">8500 р./кв.м.</span>
+
+              <a class="our-services__button" href="#">Вызвать специалиста</a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -269,10 +363,6 @@
 
 
   <!-- scripts  -->
-  <script src="./js/slider.js"></script>
-  <script src="./js/accordion.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/modal.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

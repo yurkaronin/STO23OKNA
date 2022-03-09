@@ -1,7 +1,9 @@
 // шапка -----------------------------------------
 .header {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  max-width: 100%;
 }
 
 .header__flex {
@@ -37,7 +39,18 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
+  .header__flex {
+    gap: 16px;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width: 1150px) {
   .header__navigation {
     display: none;
   }
@@ -50,7 +63,7 @@
     max-width: 245px;
     position: relative;
     padding-right: 32px;
-  
+
     &::after {
       content: "";
       display: block;
@@ -60,7 +73,7 @@
       width: 1px;
       background-color: #DDDEE2;
     }
-  
+
   }
 
   .header__contacts .telephone {
@@ -72,5 +85,101 @@
   .header__flex {
     padding: 12px 0;
     gap: 11px 37px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__flex {
+    gap: 11px 24px;
+  }
+  .header__contacts {
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    background-color: #fff;
+
+    .whatsapp img {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+
+    .logo-text {
+      fill: #000;
+    }
+
+    .button-menu span,
+    .button-menu span::after,
+    .button-menu span::before {
+      background-color: #000000;
+    }
+
+    .telephone {
+      color: #000000;
+    }
+
+    .menu-show .header .whatsapp img {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .main-nav__link {
+      color: #000000;
+    }
+  }
+
+}
+
+@media (max-width: 510px) {
+  .header .telephone {
+    display: none;
+  }
+
+  .header__contacts {
+    max-width: max-content;
+    margin: 0;
+  }
+}
+
+.header--sticky {
+  background-color: #fff;
+  border-radius: 0px 0px 24px 24px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+  .logo-text {
+    fill: #000;
+  }
+
+  .button-menu span,
+  .button-menu span::after,
+  .button-menu span::before {
+    background-color: #000000;
+  }
+
+  .telephone {
+    color: #000000;
+  }
+
+  .menu-show .header .whatsapp img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+  }
+
+  .main-nav__link {
+    color: #000000;
+
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffffff;
+    }
+  }
+  
+
+  @media (max-width: 600px) {
+    .header__logo {
+      max-width: 108px;
+    }
   }
 }

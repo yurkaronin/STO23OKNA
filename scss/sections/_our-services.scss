@@ -1,0 +1,121 @@
+.our-services {}
+
+.wrapper {}
+
+.section__flex {}
+
+.our-services__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.our-services__list li {
+  width: calc(25% - 12px);
+  background: #FFFFFF;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  padding: 16px;
+  padding-bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.our-services__img {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.our-services img {
+  display: block;
+  width: 100%;
+  border-radius: 24px 24px 24px 6px;
+}
+
+.our-services__name {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: auto;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 6px;
+}
+
+.our-services__price {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #1C213F;
+  margin-bottom: 27px;
+  display: block;
+}
+
+.our-services__button {
+  display: block;
+  background: transparent;
+  padding: 19px 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4680FE;
+  text-decoration: none;
+  border-top: 1px solid #DDDEE2;
+  position: relative;
+  z-index: 2;
+
+}
+
+.our-services__button:hover {
+  background: #4680FE;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border-color: transparent;
+
+  &::before {
+    background: #4680FE;
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    height: 100%;
+    width: 50%;
+    top: -1px;
+    left: -50%;
+
+  }
+  &::after {
+    background: #4680FE;
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    height: 100%;
+    width: 50%;
+    top: -1px;
+    right: -50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-services__list li {
+    width: calc((100 / 3) - 12px);
+  }
+  .our-services__img {
+    margin-bottom: 19px;
+  }
+}
