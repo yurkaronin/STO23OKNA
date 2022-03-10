@@ -1777,7 +1777,6 @@ textarea {
 }
 
 .calculate-free {
-  background-color: #9C938B;
   background-image: url(../img/calculate-free/bg.jpg);
   background-position: center;
   background-size: cover;
@@ -1786,19 +1785,6 @@ textarea {
   padding: 66px 0 78px;
   z-index: 0;
   position: relative;
-}
-
-.calculate-free::after {
-  content: "";
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 1, 20, 0.1)), to(rgba(0, 1, 20, 0.1)));
-  background: linear-gradient(0deg, rgba(0, 1, 20, 0.1), rgba(0, 1, 20, 0.1));
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
 }
 
 .calculate-free .wrapper {
@@ -1817,11 +1803,6 @@ textarea {
 .calculate-free--two {
   padding: 66px 0 0;
   background-image: url(../img/calculate-free/bg-2.jpg);
-}
-
-.calculate-free--two::after {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 1, 20, 0.15)), to(rgba(0, 1, 20, 0.15)));
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 1, 20, 0.15), rgba(0, 1, 20, 0.15));
 }
 
 .calculate-free--two .section__text {
@@ -1849,8 +1830,8 @@ textarea {
   background-color: transparent;
 }
 
-.calculate-free--three::after {
-  display: none;
+.calculate-free--four {
+  background-image: url(../img/calculate-free/bg-4.png);
 }
 
 @media (max-width: 1024px) {
