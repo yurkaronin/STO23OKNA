@@ -1,0 +1,112 @@
+.custom-form {
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  textarea {
+    resize: none !important;
+    /* Запрещаем изменять размер */
+  }
+}
+
+.custom-form__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px 32px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.custom-form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: calc(50% - 16px);
+  width: 100%;
+}
+
+.custom-form__label {
+  color: #4B4E66;
+  font-family: var(--ff-4);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.custom-form__input {
+  background: #FFFFFF;
+  border-radius: 6px;
+  color: #8E909F;
+  padding: 13px 23px 17px;
+  border: 1px solid #B1AFB6;
+  outline: none;
+  width: 100%;
+  max-width: 100%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: #1C213F;
+    color: #1C213F;
+  }
+}
+
+
+.custom-form__politic {}
+
+.form__submit-button {}
+
+.custom-form__label--accept {
+  margin: 0;
+  position: relative;
+  padding-left: 48px;
+  width: calc(50% - 16px);
+  pointer-events: initial;
+}
+
+.custom-form__label--accept input[type=checkbox]+.custom-form__politic::before {
+  content: "";
+  background-image: url(../img/icons/checkbox-off.svg);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.custom-form__label--accept input[type=checkbox]:checked+.custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+@media (max-width: 650px) {
+  .custom-form {
+    padding-top: 22px;
+  }
+
+  .custom-form__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+  }
+
+  .custom-form__item {
+    max-width: 100%;
+  }
+
+  .custom-form__label--accept {
+    width: 100%;
+  }
+
+  .form__submit-button {
+    width: 100%;
+    max-width: 100%;
+
+    .button__text {
+      width: 100%;
+    }
+  }
+
+
+}

@@ -1,0 +1,38 @@
+.dude {
+  position: absolute;
+  bottom: 0;
+  width: 476px;
+  right: 15%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+@media (max-width: 1450px) {
+  .dude {
+    right: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .dude {
+    right: -5%;
+  }
+}
+
+@media (max-width: 950px) {
+  .dude {
+    right: -17%;
+  }
+}
+
+@media (max-width: 850px) {
+  .dude {
+    right: -23%;
+  }
+}
+
+@media (max-width: 650px) {
+  .dude {
+    display: none;
+  }
+}

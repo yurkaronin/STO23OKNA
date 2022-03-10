@@ -26,7 +26,20 @@
   line-height: 1.4;
   text-transform: uppercase;
   color: #1C213F;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #DDDEE2;
+    width: 80px;
+}
 }
 
 .reviews__text {
