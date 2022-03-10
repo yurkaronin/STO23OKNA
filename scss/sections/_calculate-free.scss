@@ -1,6 +1,6 @@
 .calculate-free {
   // background-color: #9C938B;
-  background-image: url(../img/calculate-free/bg.jpg);
+  background-image: url(../img/calculate-free/1/bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,11 +39,7 @@
 // модификация 2 
 .calculate-free--two {
   padding: 66px 0 0;
-  background-image: url(../img/calculate-free/bg-2.jpg);
-
-  // &::after {
-  //   background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 1, 20, 0.15), rgba(0, 1, 20, 0.15));
-  // }
+  background-image: url(../img/calculate-free/2/bg.jpg);
 
   .section__text {
     color: inherit;
@@ -70,25 +66,75 @@
 // модификация 3 
 .calculate-free--three {
   padding: 90px 0 86px;
-  background-image: url(../img/calculate-free/bg-3.png);
+  background-image: url(../img/calculate-free/3/bg.jpg);
   background-color: transparent;
 
-  // &::after {
-  //   display: none;
-  // }
+  .dude {
+    width: 584px;
+    right: 10%;
+  }
+
 }
 
 // модификация 4 
 .calculate-free--four {
-  background-image: url(../img/calculate-free/bg-4.png);
+  background-image: url(../img/calculate-free/4/bg.jpg);
+
+  .custom-form__item {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 1220px) {
+  .calculate-free--three {
+    .dude {
+      right: -10% !important;
+      width: 510px !important;
+
+    }
+  }
 }
 
 @media (max-width: 1024px) {
   .calculate-free__wrapper {
     max-width: 608px;
   }
+
+  .calculate-free {
+    background-image: url(../img/calculate-free/1/bg-1024.jpg);
+  }
+
+  .calculate-free--two {
+    background-image: url(../img/calculate-free/2/bg-1024.jpg);
+  }
+
   .calculate-free--three {
-    background-image: url(../img/calculate-free/bg-3-1024.jpg);
+    background-image: url(../img/calculate-free/3/bg-1024.jpg);
+
+    .dude {
+      width: 584px;
+      right: 10%;
+    }
+  }
+
+  .calculate-free--four {
+    background-image: url(../img/calculate-free/4/bg-1024.jpg);
+
+    .dude {
+      width: 427px;
+      right: 0 !important;
+    }
+
+  }
+}
+
+@media (max-width: 910px) {
+  .calculate-free--three {
+    .dude {
+      display: none;
+
+    }
   }
 }
 
@@ -96,15 +142,28 @@
   .calculate-free__wrapper {
     max-width: 480px;
   }
+
+  .calculate-free {
+    background-image: url(../img/calculate-free/1/bg-768.jpg);
+  }
+
+  .calculate-free--two {
+    background-image: url(../img/calculate-free/2/bg-768.jpg);
+  }
+
   .calculate-free--three {
-    background-image: url(../img/calculate-free/bg-3-768.jpg);
+    background-image: url(../img/calculate-free/3/bg-768.jpg);
+  }
+
+  .calculate-free--four {
+    background-image: url(../img/calculate-free/4/bg-768.jpg);
   }
 }
 
 @media (max-width: 600px) {
   .calculate-free {
     background-color: #F6F6F7;
-    background-image: none;
+    background-image: none !important;
     padding-bottom: 48px;
     padding-top: 0;
 
