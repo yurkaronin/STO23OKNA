@@ -49,7 +49,7 @@ let reviewsSwiper = new Swiper(".js-reviews-swip", {
       slidesPerView: 1,
       spaceBetween: 0
     },
-    500: {
+    670: {
       slidesPerView: 2,
       spaceBetween: 32
     }

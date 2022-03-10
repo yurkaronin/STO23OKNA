@@ -960,7 +960,6 @@ textarea {
 
 .benefits__item-flex svg {
   max-width: 56px;
-  width: 100%;
 }
 
 .benefits__text {
@@ -1007,6 +1006,9 @@ textarea {
   }
   .benefits__item-flex svg path {
     stroke: #4680FE;
+  }
+  .benefits__item-flex:first-child {
+    padding-left: 14px;
   }
 }
 
@@ -1061,6 +1063,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  opacity: 0.8;
 }
 
 .custom-form__input {
@@ -1125,6 +1128,7 @@ textarea {
   .form__submit-button {
     width: 100%;
     max-width: 100%;
+    text-align: left;
   }
   .form__submit-button .button__text {
     width: 100%;
@@ -1810,9 +1814,51 @@ textarea {
   display: none;
 }
 
+.calculate-free--two {
+  padding: 66px 0 0;
+  background-image: url(../img/calculate-free/bg-2.jpg);
+}
+
+.calculate-free--two::after {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 1, 20, 0.15)), to(rgba(0, 1, 20, 0.15)));
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 1, 20, 0.15), rgba(0, 1, 20, 0.15));
+}
+
+.calculate-free--two .section__text {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.calculate-free--two .section__header {
+  padding-bottom: 48px;
+  margin-bottom: 38px;
+}
+
+.calculate-free--two .custom-form {
+  padding-top: 0;
+  margin-bottom: 77px;
+}
+
+.calculate-free--two .custom-form__item {
+  max-width: 100%;
+}
+
+.calculate-free--three {
+  padding: 90px 0 86px;
+  background-image: url(../img/calculate-free/bg-3.png);
+  background-color: transparent;
+}
+
+.calculate-free--three::after {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .calculate-free__wrapper {
     max-width: 608px;
+  }
+  .calculate-free--three {
+    background-image: url(../img/calculate-free/bg-3-1024.jpg);
   }
 }
 
@@ -1820,9 +1866,12 @@ textarea {
   .calculate-free__wrapper {
     max-width: 480px;
   }
+  .calculate-free--three {
+    background-image: url(../img/calculate-free/bg-3-768.jpg);
+  }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .calculate-free {
     background-color: #F6F6F7;
     background-image: none;
@@ -1841,6 +1890,12 @@ textarea {
     margin-bottom: 25px;
     border-bottom: 1px solid rgba(28, 33, 63, 0.15);
     padding-bottom: 25px;
+  }
+  .calculate-free .benefits__item-flex:last-child {
+    border-bottom: none;
+  }
+  .calculate-free .calculate-free--two .custom-form {
+    margin-bottom: 40px;
   }
   .calculate-free__top-image {
     display: block;

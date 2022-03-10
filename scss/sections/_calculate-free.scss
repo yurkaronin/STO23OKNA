@@ -36,9 +36,54 @@
   display: none;
 }
 
+// модификация 2 
+.calculate-free--two {
+  padding: 66px 0 0;
+  background-image: url(../img/calculate-free/bg-2.jpg);
+
+  &::after {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, rgba(0, 1, 20, 0.15), rgba(0, 1, 20, 0.15));
+  }
+
+  .section__text {
+    color: inherit;
+    opacity: 0.8;
+  }
+
+  .section__header {
+    padding-bottom: 48px;
+    margin-bottom: 38px;
+  }
+
+  .custom-form {
+    padding-top: 0;
+    margin-bottom: 77px;
+  }
+
+  .custom-form__item {
+    max-width: 100%;
+  }
+
+
+}
+
+// модификация 3 
+.calculate-free--three {
+  padding: 90px 0 86px;
+  background-image: url(../img/calculate-free/bg-3.png);
+  background-color: transparent;
+
+  &::after {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
   .calculate-free__wrapper {
     max-width: 608px;
+  }
+  .calculate-free--three {
+    background-image: url(../img/calculate-free/bg-3-1024.jpg);
   }
 }
 
@@ -46,9 +91,12 @@
   .calculate-free__wrapper {
     max-width: 480px;
   }
+  .calculate-free--three {
+    background-image: url(../img/calculate-free/bg-3-768.jpg);
+  }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   .calculate-free {
     background-color: #F6F6F7;
     background-image: none;
@@ -72,7 +120,13 @@
       padding-bottom: 25px;
     }
 
+    .benefits__item-flex:last-child {
+      border-bottom: none;
+    }
 
+    .calculate-free--two .custom-form {
+      margin-bottom: 40px;
+    }
   }
 
   .calculate-free__top-image {
@@ -90,4 +144,6 @@
   .calculate-free__wrapper {
     max-width: 100%;
   }
+
+
 }

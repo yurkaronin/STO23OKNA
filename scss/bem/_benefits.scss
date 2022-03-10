@@ -33,7 +33,6 @@
 
   svg {
     max-width: 56px;
-    width: 100%;
   }
 }
 
@@ -88,6 +87,9 @@
 
   .benefits__item-flex svg path {
     stroke: #4680FE;
+  }
+  .benefits__item-flex:first-child {
+    padding-left: 14px;
   }
 
 }
