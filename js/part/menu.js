@@ -6,7 +6,7 @@ if (menuButton) {
     menuButton.classList.toggle('active');
   });
 
-}
+};
 
 // //плавная прокрутка до блока js
 let anchors = document.querySelectorAll('a[data-target^="anchor"]');
@@ -22,5 +22,10 @@ for (let anchor of anchors) {
       top: targetOffset,
       behavior: "smooth"
     });
+    // свернуть меню при клике по пункту меню на мобилках
+    if (window.innerWidth <= 1150) {
+      document.body.classList.remove('menu-show');
+      console.log('test');
+    }
   });
-}
+};
