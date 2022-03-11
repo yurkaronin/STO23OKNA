@@ -23,7 +23,7 @@
   position: relative;
 
   &.active {
-    background: #A6BF2A;
+    background: #A6BF2A !important;
     color: #ffffff;
     border: none;
 
@@ -32,9 +32,7 @@
     }
   }
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  &:hover {
     background: #00B2D2;
     color: #ffffff;
     outline: none;

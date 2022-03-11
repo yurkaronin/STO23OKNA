@@ -8,9 +8,6 @@
 @import "../bem/portfolio-card";
 @import "../bem/dude";
 @import "../bem/visually-hidden";
-
-
-@import "../bem/first-screen-background";
 @import "../bem/wrapper";
 @import "../bem/whatsapp";
 @import "../bem/telephone";
@@ -18,6 +15,7 @@
 @import "../bem/button-menu";
 @import "../bem/benefits";
 @import "../bem/custom-form";
+@import "../bem/accordion";
 
 @import "../sections/header";
 @import "../sections/hero";
@@ -27,9 +25,9 @@
 @import "../sections/our-works";
 @import "../sections/reviews";
 @import "../sections/calculate-free";
-
-
+@import "../sections/faq";
 @import "../sections/footer";
+@import "../sections/modal";
 
 // Активности всякие 
 @import "../bem/menu-show";

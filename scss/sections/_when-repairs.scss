@@ -1,5 +1,4 @@
 .when-repairs__list {
-  ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -7,7 +6,6 @@
     gap: 16px;
     align-items: flex-start;
     flex-wrap: wrap;
-  }
 
   li {
     width: calc(25% - 12px);
@@ -64,7 +62,7 @@
 
 
 @media (max-width: 1024px) {
-  .when-repairs__list ul {
+  .when-repairs__list {
     gap: 32px;
   }
 

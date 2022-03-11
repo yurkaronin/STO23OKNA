@@ -29,7 +29,7 @@
 
 }
 
-.section-top__left {
+.section__left {
   max-width: 65%;
 }
 
@@ -42,7 +42,7 @@
 
 }
 
-.section-top__pagination {
+.section__pagination {
   max-width: max-content;
   font-family: var(--ff-4);
   font-weight: 400;
@@ -119,7 +119,7 @@
     flex-direction: column;
   }
 
-  .section-top__left {
+  .section__left {
     width: 100%;
     max-width: 100%;
   }
