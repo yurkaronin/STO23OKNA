@@ -2269,9 +2269,9 @@ textarea {
           justify-content: center;
 }
 
-.modal .section__header-mod {
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+.modal .section__header--mod {
+  margin-bottom: 30px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #DDDEE2;
 }
 
@@ -2375,6 +2375,34 @@ textarea {
 
 .modal--show:before {
   opacity: 1;
+}
+
+@media (max-width: 425px) {
+  .modal__wrapper {
+    padding: 25px 21px 34px;
+    margin: 0 16px;
+  }
+  .modal .section__title {
+    font-size: 24px;
+  }
+  .section__text {
+    font-size: 16px;
+  }
+  .modal__close-button {
+    width: 48px;
+    height: 48px;
+    padding: 24px;
+  }
+  .modal__close-button span::after,
+  .modal__close-button span {
+    width: 32px;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal__wrapper {
+    margin: 0;
+  }
 }
 
 .menu-show .header__navigation {

@@ -1,17 +1,29 @@
 for (let callbackButton of callbackButtons) {
 
-  let closeBtn = modalCallBack.querySelector('#close-modal');
-
   callbackButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalCallBack.classList.toggle('modal--show');
   });
 
-  closeBtn.addEventListener('click', function (evt) {
+};
+
+let closeBtns = document.querySelectorAll('#close-modal');
+for (let closeBtn of closeBtns) {
+  closeBtn.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    closeBtn.closest('section').classList.remove('modal--show');
+  })
+};
+
+// Для тестов и демонстраций диалоговых окон (На проде УДАЛИТЬ!)
+let submitBtns = document.querySelectorAll('button[type="submit"]');
+
+for (let submitBtn of submitBtns) {
+  submitBtn.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalCallBack.classList.remove('modal--show');
-  });
-
+    document.querySelector('.js-successful-modal').classList.add('modal--show');
+  })
 };
 
 let closeModal = document.querySelector('a[data-status^="on"]');
