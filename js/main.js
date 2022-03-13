@@ -24,3 +24,4 @@ include("./js/part/header.js");
 include("./js/part/accordion.js");
 include("./js/part/menu.js");
 include("./js/part/modal.js");
+include("./js/part/animate.js");

@@ -17,10 +17,13 @@
 .main-nav__link {
   text-decoration: none;
   color: #ffffff;
-  font-family: inherit;
-  padding: 38px 16px 40px;
+  padding: 35px 16px 43px;
+  font-weight: 400;
   display: block;
   position: relative;
+  font-size: 15px;
+  line-height: 120%;
+  font-family: var(--ff-4);
 
   &.active {
     background: #A6BF2A !important;

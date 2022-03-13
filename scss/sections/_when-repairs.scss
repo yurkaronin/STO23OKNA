@@ -34,6 +34,7 @@
   justify-content: center;
   width: 64px;
   height: 64px;
+  transition: all 0.3s ease;
 }
 
 .when-repairs__name {
@@ -53,13 +54,19 @@
 }
 
 .when-repairs__img {
+  // transition: 1s;
+  // overflow: hidden;
+
+  // &:hover {
+  //   transform: scale(1.1);
+  //  }
+  
   &:hover {
     .when-repairs__icon {
       background-color: #00B2D2;
     }
   }
 }
-
 
 @media (max-width: 1024px) {
   .when-repairs__list {

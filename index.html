@@ -27,16 +27,16 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header js-header">
     <div class="wrapper">
       <div class="header__flex">
-        <div class="header__logo">
+        <a href="#" class="header__logo js-logotype">
           <picture>
             <source media="(max-width: 600px)" srcset="img/logotype/logo-black.svg">
             <img src="img/logotype/logo.svg" alt="логотип">
           </picture>
 
-        </div>
+        </a>
 
         <nav class="header__navigation main-nav">
           <ul>
@@ -45,7 +45,7 @@
                   <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
                     stroke-linecap="round" />
                 </svg></a></li>
-            <li><a href="#repear" class="main-nav__link active" data-target="anchor"><span>Услуги</span>
+            <li><a href="#repear" class="main-nav__link" data-target="anchor"><span>Услуги</span>
                 <svg width="26" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 5h23m0 0-3.943-4M24 5l-3.943 4" stroke="#4680FE" stroke-width="2"
                     stroke-linecap="round" />
@@ -1062,6 +1062,13 @@
 
   <!-- libs js  -->
   <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./libs/gsap.min.js"></script>
+  <script src="./libs/ScrollTrigger.min.js"></script>
+  <script src="./libs/ScrollToPlugin.min.js"></script>
+  <script src="./libs/ScrollToPlugin.min.js"></script>
+  <!-- <script src="./libs/CSSRulePlugin.min.js"></script> -->
+
+
 
   <!-- scripts  -->
   <script src="./js/main.js"></script>

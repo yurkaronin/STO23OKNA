@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 64px;
+  gap: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -20,6 +20,11 @@
   max-width: 131px;
   width: 100%;
   flex-grow: 1;
+  display: block;
+
+  img {
+    display: block;
+  }
 }
 
 .header__navigation {
@@ -93,6 +98,7 @@
   .header__flex {
     gap: 11px 24px;
   }
+
   .header__contacts {
     padding-right: 24px;
   }
@@ -176,7 +182,7 @@
       color: #ffffff;
     }
   }
-  
+
 
   @media (max-width: 600px) {
     .header__logo {

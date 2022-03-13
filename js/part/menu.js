@@ -14,8 +14,12 @@ let anchors = document.querySelectorAll('a[data-target^="anchor"]');
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector('.main-nav__link.active').classList.remove('active');
-    anchor.classList.toggle('active');
+    let activeLink = document.querySelector('.main-nav__link.active');
+    if (activeLink) {
+      activeLink.classList.remove('active');
+    }
+
+    anchor.classList.add('active');
     const sectionTarget = anchor.getAttribute("href");
     let targetOffset = document.querySelector("" + sectionTarget).offsetTop - headerHeight;
     window.scrollTo({
