@@ -5,15 +5,15 @@
   gap: 0;
   border: none;
   border-radius: 6px;
-  overflow: hidden;
   max-width: max-content;
   justify-content: space-between;
   position: relative;
-  align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
   transition: all 0.5s ease;
+  overflow: hidden;
+  align-items: stretch;
 
 }
 
