@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.5s ease;
 }
 
 .our-services__top {
@@ -77,11 +78,18 @@
 
 }
 
-.our-services__item:hover .our-services__button {
-  background: #4680FE;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-  border-color: transparent;
+.our-services__item:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+  z-index: 11;
+  position: relative;
+
+  .our-services__button {
+    background: #4680FE;
+    color: #ffffff;
+    border-color: transparent;
+
+  }
 
 }
 
