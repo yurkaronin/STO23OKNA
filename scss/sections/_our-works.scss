@@ -1,4 +1,14 @@
 .our-works {
+  padding: 0;
+  .swiper {
+    padding: 20px 0;
+  }
+  
+}
 
+@media (max-width: 425px) {
+  .section__top {
+    margin-bottom: 8px;
+  }
 }
 

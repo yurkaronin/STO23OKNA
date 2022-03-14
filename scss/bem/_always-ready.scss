@@ -1,4 +1,3 @@
-
 .always-ready {
   display: flex;
   align-items: center;
@@ -12,15 +11,35 @@
 
 .always-ready__title {
   font-family: var(--ff-4);
-font-weight: 400;
-font-size: 20px;
-line-height: 1.4;
-color: #1C213F;
-margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #1C213F;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .always-ready__title {
+    max-width: 350px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .always-ready__title {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
   .always-ready__title {
-  font-size: 18px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .always-ready__title {
+    max-width: 350px;
+    text-align: initial;
   }
 }

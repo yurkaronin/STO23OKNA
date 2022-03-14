@@ -44,6 +44,7 @@
   height: 0;
   overflow: hidden;
   padding: 0 112px;
+  transition: max-height 3s;
 
   p {
     margin-top: 0;
@@ -90,12 +91,16 @@
 
 @media (max-width: 1024px) {
   .accordion__btn {
-    padding: 25px 32px;
+    padding: 23px 30px;
   }
 
   .accordion__content {
     padding: 0 84px;
 
+  }
+  .button-plus::before,
+  .button-plus::after {
+    width: 32px;
   }
 }
 
@@ -108,7 +113,7 @@
 
 @media (max-width: 425px) {
   .accordion__btn {
-    padding: 20px 24px;
+    padding: 20px 30px;
   }
 
   .accordion-title {
@@ -142,6 +147,7 @@
     padding-top: 22px;
     padding-bottom: 22px;
     height: auto;
+    transition: max-height 1.5s;
 
   }
 

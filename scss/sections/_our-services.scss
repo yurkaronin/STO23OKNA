@@ -34,7 +34,7 @@
 .our-services img {
   display: block;
   width: 100%;
-  border-radius: 24px 24px 24px 6px;
+  border-radius: 16px 16px 16px 0px;
 }
 
 .our-services__name {
@@ -55,7 +55,7 @@
   line-height: 140%;
   text-transform: uppercase;
   color: #1C213F;
-  margin-bottom: 27px;
+  margin-bottom: 6px;
   display: block;
 }
 
@@ -73,10 +73,11 @@
   border-top: 1px solid #DDDEE2;
   position: relative;
   z-index: 2;
+  transition: all 0.5s ease;
 
 }
 
-.our-services__button:hover {
+.our-services__item:hover .our-services__button {
   background: #4680FE;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
   color: #ffffff;
@@ -106,4 +107,22 @@
     width: 100%;
   }
 
+}
+
+@media (max-width: 425px) {
+  .our-services {
+    padding-top: 84px;
+  }
+
+  .our-services__img {
+    margin-bottom: 10px;
+  }
+
+  .our-services__price {
+    margin-bottom: 3px;
+  }
+
+  .our-services__list {
+    gap: 8px;
+  }
 }

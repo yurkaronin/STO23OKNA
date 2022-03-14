@@ -31,16 +31,28 @@
 }
 
 .footer__contact {
-  width: calc(50% - 16px);
+  max-width: calc(50% - 16px);
   display: flex;
   flex-wrap: wrap;
   gap: 13px;
   align-items: center;
 
+  img {
+    transition: all 0.5s ease;
+  }
+
   &:hover img,
   &:focus img {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    transform: scale(1.3);
+
+    .whatsapp img {
+      filter: none;
+      transform: none;
+    }
   }
+
+
 }
 
 .footer__title {
@@ -76,12 +88,14 @@
   span {
     padding-right: 16px;
     color: #A6BF2A;
+    transition: all 0.5s ease;
 
   }
 
   svg {
     path {
       fill: #A6BF2A;
+      transition: all 0.5s ease;
     }
   }
 
@@ -115,7 +129,7 @@
   }
 
   .footer__contact {
-    width: 250px;
+    max-width: 250px;
   }
 
   .footer__right {
@@ -136,4 +150,10 @@
     padding-top: 40px;
     padding-bottom: 20px;
   }
+  .footer__left {
+    flex-direction: column;
+}
+  .footer__contact {
+    max-width: 100%;
+}
 }

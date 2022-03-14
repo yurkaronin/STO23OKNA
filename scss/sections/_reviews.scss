@@ -1,4 +1,8 @@
-.reviews {}
+.reviews {
+  .section__top {
+    margin-bottom: 38px;
+  }
+}
 
 .reviews__swiper {
   margin-bottom: 40px;
@@ -40,7 +44,7 @@
     height: 1px;
     background-color: #DDDEE2;
     width: 80px;
-}
+  }
 }
 
 .reviews__text {
@@ -57,4 +61,20 @@
   .reviews__item {
     max-width: 448px
   }
+
+}
+
+@media (max-width: 425px) {
+  .reviews .section__top {
+    margin-bottom: 21px;
+  }
+
+  .reviews__name {
+    padding-bottom: 20px;
+  }
+
+  .reviews__swiper {
+    margin-bottom: 23px;
+  }
+
 }

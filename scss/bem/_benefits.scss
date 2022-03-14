@@ -48,7 +48,8 @@
 @media (max-width: 1024px) {
   .benefits__item-flex {
     gap: 16px;
-    padding: 20px 24px;
+    // padding: 20px 24px;
+    padding: 38px 24px 40px;
   }
 
   .benefits__text {
@@ -93,3 +94,10 @@
   }
 
 }
+
+@media (max-width: 425px) {
+  .benefits__item-flex {
+    padding: 30px 24px 21px;
+  }
+}
+

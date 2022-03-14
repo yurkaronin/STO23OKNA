@@ -1,14 +1,10 @@
-.choose-us {}
-
-.wrapper {}
-
 .choose-us__list {
   display: flex;
   flex-wrap: wrap;
   // align-items: center;
   justify-content: space-between;
   gap: 32px;
-  margin-bottom: 41px;
+  margin-bottom: 3px;
 }
 
 .choose-us__item {
@@ -27,6 +23,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 17px;
+  transition: all 0.5s ease;
 
   svg {
     max-width: 50px;

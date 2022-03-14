@@ -9,6 +9,13 @@
   max-width: 416px;
   text-decoration: none;
   margin: 10px 0;
+  transition: all 0.5s ease;
+
+  &:hover {
+      transform: scale(1.1);
+      z-index: 11;
+      position: relative;
+  }
 }
 
 .portfolio-card__photo {
@@ -36,6 +43,7 @@
   color: #FFFFFF;
   background: #00B2D2;
   border-radius: 0px 6px 0px 0px;
+  transition: all 0.5s ease;
 }
 
 .portfolio-card__title {
@@ -70,5 +78,11 @@
 .portfolio-card:focus {
   .portfolio-card__label {
     background-color: #4680FE;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-card {
+    margin: 0 auto;
   }
 }

@@ -13,6 +13,7 @@
   cursor: pointer;
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
+  transition: all 0.5s ease;
 
 }
 
@@ -25,9 +26,10 @@
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  padding: 20px 11px 20px 24px;
+  padding: 19px 11px 20px 24px;
   padding-right: 20px + 56px;
   box-shadow: 0 -4px #00000029 inset;
+  transition: all 0.5s ease;
 
 }
 
@@ -84,4 +86,22 @@
   &:hover {
     background-color: #A6BF2A;
   }
+}
+
+@media (max-width: 425px) {
+  .button__text {
+    padding: 16px 17px 14px 17px;
+  }
+  .button__icon {
+    width: 47px;
+  }
+
+  .button--simple {
+    padding: 15px 16px 14px;
+  }
+
+  .button__text {
+    text-align: initial !important;
+  }
+  
 }

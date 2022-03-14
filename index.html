@@ -270,7 +270,7 @@
 
               <div class="custom-form__item">
                 <label class="custom-form__label" for="custom-tel">Телефон:</label>
-                <input class="custom-form__input" type="tel" name="phone" id="custom-tel" value="Ваш номер" required>
+                <input class="custom-form__input" type="tel" name="phone" id="custom-tel" required data-required placeholder="+7 ( ___ ) ___ - __ - __">
               </div>
 
             </div>
@@ -280,7 +280,7 @@
               <textarea class="custom-form__input" name="custom-text" rows="1" id="custom-text">Пишу текст...</textarea>
             </div>
 
-            <div class="custom-form__wrapper">
+            <div class="custom-form__wrapper custom-form__wrapper--mod">
 
               <label class="custom-form__label custom-form__label--accept">
                 <input class="visually-hidden" type="checkbox" name="confirm" checked required>
@@ -467,7 +467,7 @@
               </div>
             </div>
 
-            <div class="custom-form__wrapper">
+            <div class="custom-form__wrapper custom-form__wrapper--mod">
               <label class="custom-form__label custom-form__label--accept">
                 <input class="visually-hidden" type="checkbox" name="confirm" checked required>
                 <span class="custom-form__politic">Даю согласие на обработку персональных данных</span>
@@ -658,18 +658,18 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <li class="swiper-slide">
-            <a href="#" class="portfolio-card" title="анонс выполненной работы">
+            <a href="img/our-works/1.jpg" class="portfolio-card" title="анонс выполненной работы" data-fslightbox="gallery">
               <div class="portfolio-card__photo">
                 <img src="img/our-works/1.jpg" alt="фото работы">
                 <span class="portfolio-card__label">смотреть 15 фото</span>
               </div>
-              <h3 class="portfolio-card__title">Пример названия объекта или адрес</h3>
+              <h3 class="portfolio-card__title">Пример названия объекта или адрес1</h3>
               <p class="portfolio-card__desc">Заказал бесплатную диагностику окон и заодно заменил москитные сетки.
                 Живу в частном доме, стоят снаружи решетки, которые постоянно мешают снимать и вставлять сетки.</p>
             </a>
           </li>
           <li class="swiper-slide">
-            <a href="#" class="portfolio-card" title="анонс выполненной работы">
+            <a href="img/our-works/2.jpg" class="portfolio-card" title="анонс выполненной работы" data-fslightbox="gallery">
               <div class="portfolio-card__photo">
                 <img src="img/our-works/2.jpg" alt="фото работы">
                 <span class="portfolio-card__label">смотреть 1 фото</span>
@@ -680,7 +680,7 @@
             </a>
           </li>
           <li class="swiper-slide">
-            <a href="#" class="portfolio-card" title="анонс выполненной работы">
+            <a href="img/our-works/3.jpg" class="portfolio-card" title="анонс выполненной работы" data-fslightbox="gallery">
               <div class="portfolio-card__photo">
                 <img src="img/our-works/3.jpg" alt="фото работы">
                 <span class="portfolio-card__label">смотреть 2 фото</span>
@@ -691,7 +691,7 @@
             </a>
           </li>
           <li class="swiper-slide">
-            <a href="#" class="portfolio-card" title="анонс выполненной работы">
+            <a href="img/our-works/4.jpg" class="portfolio-card" title="анонс выполненной работы" data-fslightbox="gallery">
               <div class="portfolio-card__photo">
                 <img src="img/our-works/4.jpg" alt="фото работы">
                 <span class="portfolio-card__label">смотреть 3 фото</span>
@@ -702,7 +702,7 @@
             </a>
           </li>
           <li class="swiper-slide">
-            <a href="#" class="portfolio-card" title="анонс выполненной работы">
+            <a href="img/our-works/5.jpg" class="portfolio-card" title="анонс выполненной работы" data-fslightbox="gallery">
               <div class="portfolio-card__photo">
                 <img src="img/our-works/5.jpg" alt="фото работы">
                 <span class="portfolio-card__label">смотреть 4 фото</span>
@@ -753,7 +753,7 @@
               <textarea class="custom-form__input" name="custom-text" rows="1" id="custom-text">Пишу текст...</textarea>
             </div>
 
-            <div class="custom-form__wrapper">
+            <div class="custom-form__wrapper custom-form__wrapper--mod">
 
               <label class="custom-form__label custom-form__label--accept">
                 <input class="visually-hidden" type="checkbox" name="confirm" checked required>
@@ -761,7 +761,7 @@
               </label>
 
               <button class="custom-form__submit-button button" type="submit">
-                <span class="button__text">Рассчитать</span>
+                <span class="button__text">Получить скидку</span>
                 <span class="button__icon"><svg width="18" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 5h15m0 0-3.943-4M16 5l-3.943 4" stroke="#fff" stroke-width="2" stroke-linecap="round" />
                   </svg></span>
@@ -822,7 +822,7 @@
             <li class="swiper-slide">
               <figure class="reviews__item" title="анонс выполненной работы">
                 <img class="reviews__photo" src="img/reviews/2.jpg" alt="фото клиента">
-                <p class="reviews__name">Семен Семенович Горбунков</p>
+                <p class="reviews__name">Новосельцев Анатолий Ефремович</p>
                 <blockquote class="reviews__text">Заказал бесплатную диагностику окон и заодно заменил москитные сетки.
                   Живу в частном доме, стоят снаружи решетки, которые постоянно мешают снимать и вставлять сетки.
                   Мастера
@@ -848,7 +848,7 @@
             <li class="swiper-slide">
               <figure class="reviews__item" title="анонс выполненной работы">
                 <img class="reviews__photo" src="img/reviews/2.jpg" alt="фото клиента">
-                <p class="reviews__name">Семен Семенович Горбунков</p>
+                <p class="reviews__name">Новосельцев Анатолий Ефремович</p>
                 <blockquote class="reviews__text">Заказал бесплатную диагностику окон и заодно заменил москитные сетки.
                   Живу в частном доме, стоят снаружи решетки, которые постоянно мешают снимать и вставлять сетки.
                   Мастера
@@ -923,8 +923,8 @@
       <div class="wrapper">
         <div class="calculate-free__wrapper">
           <div class="section__header">
-            <h2 class="section__title">Нужны новые окна с установкой?</h2>
-            <p class="section__text">оставьте заявку и наш замерщик приедет к Вам уже сегодня</p>
+            <h2 class="section__title">Заказать бесплатную диагностику окон?</h2>
+            <p class="section__text">оставьте заявку и наш мастер приедет к Вам уже сегодня</p>
           </div>
 
           <form class="custom-form">
@@ -943,14 +943,14 @@
               </div>
             </div>
 
-            <div class="custom-form__wrapper">
+            <div class="custom-form__wrapper custom-form__wrapper--mod">
               <label class="custom-form__label custom-form__label--accept">
                 <input class="visually-hidden" type="checkbox" name="confirm" checked required>
                 <span class="custom-form__politic">Даю согласие на обработку персональных данных</span>
               </label>
 
               <button class="custom-form__submit-button button" type="submit">
-                <span class="button__text">Рассчитать</span>
+                <span class="button__text">Заказать</span>
                 <span class="button__icon"><svg width="18" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 5h15m0 0-3.943-4M16 5l-3.943 4" stroke="#fff" stroke-width="2" stroke-linecap="round" />
                   </svg></span>
@@ -1062,13 +1062,9 @@
 
   <!-- libs js  -->
   <script src="./libs/swiper-bundle.min.js"></script>
-  <script src="./libs/gsap.min.js"></script>
-  <script src="./libs/ScrollTrigger.min.js"></script>
-  <script src="./libs/ScrollToPlugin.min.js"></script>
-  <script src="./libs/ScrollToPlugin.min.js"></script>
-  <!-- <script src="./libs/CSSRulePlugin.min.js"></script> -->
-
-
+  <script src="./libs/SmoothScroll.min.js"></script>
+  <script src="./libs/inputmask.js"></script>
+  <script src="./libs/fslightbox.min.js"></script>
 
   <!-- scripts  -->
   <script src="./js/main.js"></script>

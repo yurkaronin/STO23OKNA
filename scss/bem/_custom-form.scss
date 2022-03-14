@@ -112,3 +112,20 @@
 
 
 }
+
+@media (max-width: 425px) {
+  .custom-form__input {
+    padding: 10px 23px 12px;
+    font-size: 18px;
+  }
+
+  .custom-form__wrapper,
+  .custom-form {
+    gap: 12px;
+  }
+
+  .custom-form__wrapper--mod {
+    margin-top: 14px !important;
+    gap: 24px;
+  }
+}
