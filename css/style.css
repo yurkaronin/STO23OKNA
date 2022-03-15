@@ -1697,6 +1697,7 @@ button:hover .custom-arrow__tail {
 @media (max-width: 768px) {
   .hero {
     background-image: url(../img/bg/hero-768.jpg);
+    max-height: 768px;
   }
   .hero__flex {
     gap: 32px;
