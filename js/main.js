@@ -24,59 +24,7 @@ include("./js/part/header.js");
 include("./js/part/accordion.js");
 include("./js/part/menu.js");
 include("./js/part/modal.js");
-include("./js/part/animate.js");
-
-// плавный скролл по страницам
-SmoothScroll({
-  // Время скролла 400 = 0.4 секунды
-  animationTime: 800,
-  // Размер шага в пикселях
-  stepSize: 75,
-
-  // Дополнительные настройки:
-
-  // Ускорение
-  accelerationDelta: 30,
-  // Максимальное ускорение
-  accelerationMax: 2,
-
-  // Поддержка клавиатуры
-  keyboardSupport: true,
-  // Шаг скролла стрелками на клавиатуре в пикселях
-  arrowScroll: 50,
-
-  // Pulse (less tweakable)
-  // ratio of "tail" to "acceleration"
-  pulseAlgorithm: true,
-  pulseScale: 4,
-  pulseNormalize: 1,
-
-  // Поддержка тачпада
-  touchpadSupport: true,
-});
-
-// Кастомная валидация форм
-(function () {
-  window.addEventListener("click", function (event) {
-
-    if (event.target.classList.contains("js-validate")) {
-
-      const formParent = event.target.closest("form");
-
-      formParent.querySelectorAll(".custom-form__item-wrapper").forEach(function (item) {
-        console.log(item)
-        if (item.querySelector("[data-required]")) {
-          if (item.querySelector("[data-required]").value === '') {
-            console.log("не заполнен")
-            item.classList.add("js-field-error");
-          } else {
-            console.log("заполнен")
-            item.classList.remove("js-field-error");
-          }
-        }
-      });
-    }
-  })
-})();
+include("./js/part/smooth-scroll.js");
+include("./js/part/form-validation.js");
 
 Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
