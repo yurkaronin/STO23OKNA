@@ -4,9 +4,20 @@ if (menuButton) {
     // document.body.classList.toggle('custom-lock');
     document.body.classList.toggle('menu-show');
     menuButton.classList.toggle('active');
+    if (window.innerWidth > 600 && window.innerWidth <= 1150 && !document.body.classList.contains('menu-show') && header.classList.contains('header--sticky')) {
+      headerLogo.src = 'img/logotype/logo-black.svg';
+    } else if (window.innerWidth > 600 && window.innerWidth <= 1150 && document.body.classList.contains('menu-show')) {
+      headerLogo.src = 'img/logotype/logo-black.svg';
+    } else {
+      headerLogo.src = 'img/logotype/logo.svg';
+    }
   });
 
 };
+
+
+
+
 
 // //плавная прокрутка до блока js
 let anchors = document.querySelectorAll('a[data-target^="anchor"]');

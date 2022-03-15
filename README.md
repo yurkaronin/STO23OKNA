@@ -31,4 +31,5 @@ https://yurkaronin.github.io/STO23OKNA/
 3. в формах изменил атрибут value на атрибут placeholder 
 4. удалил неиспользуемый js-файл animate
 
-
+#### js
+1. правка условий замены логотипа в шапке
