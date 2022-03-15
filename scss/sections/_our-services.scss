@@ -64,7 +64,7 @@
   display: block;
   background: transparent;
   padding: 19px 0;
-  width: 100%;
+  // width: 100%;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -74,7 +74,8 @@
   border-top: 1px solid #DDDEE2;
   position: relative;
   z-index: 2;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
+  margin: 0 16px;
 
 }
 
@@ -87,6 +88,7 @@
     background: #4680FE;
     color: #ffffff;
     border-color: transparent;
+    margin: 0;
 
   }
 

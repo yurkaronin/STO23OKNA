@@ -800,7 +800,7 @@ button:hover .custom-arrow__tail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 32px;
+  gap: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -811,7 +811,7 @@ button:hover .custom-arrow__tail {
 .main-nav__link {
   text-decoration: none;
   color: #ffffff;
-  padding: 38px 0 40px;
+  padding: 38px 16px 40px;
   font-weight: 400;
   display: block;
   position: relative;
@@ -1410,7 +1410,7 @@ button:hover .custom-arrow__tail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 47px;
+  gap: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -1556,6 +1556,10 @@ button:hover .custom-arrow__tail {
           box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
 }
 
+.header--sticky .header__flex {
+  border: none;
+}
+
 .header--sticky .logo-text {
   fill: #000;
 }
@@ -1577,7 +1581,7 @@ button:hover .custom-arrow__tail {
 
 .header--sticky .main-nav__link {
   color: #000000;
-  padding: 27px 0;
+  padding: 28px 16px;
 }
 
 .header--sticky .main-nav__link.active, .header--sticky .main-nav__link:hover, .header--sticky .main-nav__link:focus, .header--sticky .main-nav__link:active {
@@ -1912,7 +1916,6 @@ button:hover .custom-arrow__tail {
   display: block;
   background: transparent;
   padding: 19px 0;
-  width: 100%;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -1922,8 +1925,9 @@ button:hover .custom-arrow__tail {
   border-top: 1px solid #DDDEE2;
   position: relative;
   z-index: 2;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin: 0 16px;
 }
 
 .our-services__item:hover {
@@ -1937,6 +1941,7 @@ button:hover .custom-arrow__tail {
   background: #4680FE;
   color: #ffffff;
   border-color: transparent;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {

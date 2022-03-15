@@ -7,7 +7,7 @@
     margin: 0;
 
     display: flex;
-    gap: 32px;
+    gap: 0;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -17,7 +17,7 @@
 .main-nav__link {
   text-decoration: none;
   color: #ffffff;
-  padding: 38px 0 40px;
+  padding: 38px 16px 40px;
   font-weight: 400;
   display: block;
   position: relative;
