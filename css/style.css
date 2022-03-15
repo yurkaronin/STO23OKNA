@@ -2527,6 +2527,21 @@ button:hover .custom-arrow__tail {
   fill: #00B2D2;
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
+  .footer__left {
+    gap: 26px;
+  }
+  .footer__contact {
+    gap: 16px;
+    max-width: 215px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 1000px) {
   .footer__flex {
     -webkit-box-orient: vertical;
