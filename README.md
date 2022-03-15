@@ -3,3 +3,7 @@
 
 ## Ссылка для демонстрации
 https://yurkaronin.github.io/STO23OKNA/
+
+logs
+1. заменил иконку checkbox-on.svg (по сути просто убрал у неё прозрачность внутри svg-файла)
+
