@@ -205,10 +205,16 @@ textarea {
   text-align: center;
   text-transform: uppercase;
   padding: 20px 16px 17px;
+  -webkit-box-shadow: 0 -4px #00000029 inset;
+          box-shadow: 0 -4px #00000029 inset;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.button--simple:hover {
+.button--simple:active {
   background-color: #A6BF2A;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 425px) {
