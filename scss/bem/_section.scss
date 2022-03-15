@@ -87,6 +87,9 @@
   }
 }
 
+.swiper-button-prev .custom-arrow {
+  transform: rotate(180deg);
+}
 .section__header {
   border-bottom: solid 1px rgba(255,255,255,0.5);
   padding-bottom: 42px;

@@ -175,7 +175,7 @@ textarea {
 }
 
 .button:hover .button__text, .button:focus .button__text {
-  background-color: #A6BF2A;
+  background-color: #00B2D2;
 }
 
 .button:active {
@@ -224,6 +224,28 @@ textarea {
   .button__text {
     text-align: initial !important;
   }
+}
+
+.custom-arrow {
+  position: relative;
+  z-index: 12;
+  overflow: visible;
+}
+
+.custom-arrow__tail {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  stroke: #ffffff;
+}
+
+.button:hover .custom-arrow__tail,
+button:hover .custom-arrow__tail {
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section {
@@ -335,6 +357,11 @@ textarea {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
+}
+
+.swiper-button-prev .custom-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .section__header {

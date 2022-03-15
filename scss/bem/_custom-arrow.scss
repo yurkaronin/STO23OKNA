@@ -1,0 +1,17 @@
+.custom-arrow {
+  position: relative;
+  z-index: 12;
+  overflow: visible;
+}
+
+.custom-arrow__tail {
+  transform: translateX(0);
+  transition: 0.3s;
+  stroke: #ffffff;
+}
+
+.button:hover .custom-arrow__tail,
+button:hover .custom-arrow__tail {
+  transform: translateX(-6px);
+  transition: 0.3s;
+}
