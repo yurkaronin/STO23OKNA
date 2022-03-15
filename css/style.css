@@ -230,6 +230,7 @@ textarea {
   position: relative;
   z-index: 12;
   overflow: visible;
+  margin-bottom: 3px;
 }
 
 .custom-arrow__tail {
@@ -799,7 +800,7 @@ button:hover .custom-arrow__tail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0;
+  gap: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -810,7 +811,7 @@ button:hover .custom-arrow__tail {
 .main-nav__link {
   text-decoration: none;
   color: #ffffff;
-  padding: 35px 16px 43px;
+  padding: 38px 0 40px;
   font-weight: 400;
   display: block;
   position: relative;
@@ -1409,7 +1410,7 @@ button:hover .custom-arrow__tail {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 30px;
+  gap: 47px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -1452,6 +1453,9 @@ button:hover .custom-arrow__tail {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media (max-width: 1350px) {
@@ -1573,6 +1577,7 @@ button:hover .custom-arrow__tail {
 
 .header--sticky .main-nav__link {
   color: #000000;
+  padding: 27px 0;
 }
 
 .header--sticky .main-nav__link.active, .header--sticky .main-nav__link:hover, .header--sticky .main-nav__link:focus, .header--sticky .main-nav__link:active {

@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 47px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -43,6 +43,7 @@
   gap: 16px;
   align-items: center;
   margin-left: auto;
+  justify-content: flex-end;
 
 }
 
@@ -176,6 +177,7 @@
 
   .main-nav__link {
     color: #000000;
+    padding: 27px 0;
 
     &.active,
     &:hover,
