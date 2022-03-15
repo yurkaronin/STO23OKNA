@@ -1268,10 +1268,6 @@ button:hover .custom-arrow__tail {
   position: relative;
 }
 
-.accordion__btn:hover {
-  background-color: #EDF2D4;
-}
-
 .accordion-title {
   margin: 0;
   font-family: var(--ff-2);
@@ -1407,6 +1403,10 @@ button:hover .custom-arrow__tail {
   background-color: #DDDEE2;
   position: absolute;
   bottom: 0;
+}
+
+.accordion-item.active .accordion__btn:hover {
+  background-color: #EDF2D4;
 }
 
 .accordion-item.active .accordion__btn:hover::after {
