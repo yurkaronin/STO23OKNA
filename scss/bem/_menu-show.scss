@@ -32,3 +32,11 @@
 
 }
 
+@media (max-width: 510px) {
+  .menu-show .header {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
