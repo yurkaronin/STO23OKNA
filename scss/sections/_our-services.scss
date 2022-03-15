@@ -19,12 +19,15 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   transition: all 0.5s ease;
 }
 
 .our-services__top {
   padding: 16px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .our-services__img {
@@ -58,6 +61,7 @@
   color: #1C213F;
   margin-bottom: 6px;
   display: block;
+  margin-top: auto;
 }
 
 .our-services__button {

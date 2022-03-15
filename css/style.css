@@ -1921,15 +1921,22 @@ button:hover .custom-arrow__tail {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .our-services__top {
   padding: 16px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .our-services__img {
@@ -1963,6 +1970,7 @@ button:hover .custom-arrow__tail {
   color: #1C213F;
   margin-bottom: 6px;
   display: block;
+  margin-top: auto;
 }
 
 .our-services__button {
