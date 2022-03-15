@@ -1922,10 +1922,8 @@ button:hover .custom-arrow__tail {
 }
 
 .our-services__item:hover {
-  -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
-          box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
   z-index: 11;
   position: relative;
 }
