@@ -22,6 +22,13 @@
   gap: 16px;
   padding: 25px 36px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.accordion__btn:hover {
+  background-color: #EDF2D4;
+
 }
 
 .accordion-title {
@@ -98,6 +105,7 @@
     padding: 0 84px;
 
   }
+
   .button-plus::before,
   .button-plus::after {
     width: 32px;
@@ -124,7 +132,9 @@
     padding: 0 24px;
 
   }
+
   .button-plus {
+
     &::after,
     &::before {
       width: 32px;
@@ -139,9 +149,6 @@
 }
 
 .accordion-item.active {
-  .accordion__btn {
-    background-color: #EDF2D4;
-  }
 
   .accordion__content {
     padding-top: 22px;
@@ -154,4 +161,28 @@
   .button-plus::after {
     transform: rotate(0);
   }
+
+  .accordion__btn {
+  
+    &::after {
+      content: "";
+      display: block;
+      width: calc(100% - 64px);
+      height: 1px;
+      margin: 0 auto;
+      background-color: #DDDEE2;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .accordion__btn:hover {
+  
+    &::after {
+      opacity: 0;
+      height: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
 }

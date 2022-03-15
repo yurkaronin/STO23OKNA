@@ -1263,6 +1263,13 @@ button:hover .custom-arrow__tail {
   gap: 16px;
   padding: 25px 36px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.accordion__btn:hover {
+  background-color: #EDF2D4;
 }
 
 .accordion-title {
@@ -1378,10 +1385,6 @@ button:hover .custom-arrow__tail {
   }
 }
 
-.accordion-item.active .accordion__btn {
-  background-color: #EDF2D4;
-}
-
 .accordion-item.active .accordion__content {
   padding-top: 22px;
   padding-bottom: 22px;
@@ -1393,6 +1396,24 @@ button:hover .custom-arrow__tail {
 .accordion-item.active .button-plus::after {
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+
+.accordion-item.active .accordion__btn::after {
+  content: "";
+  display: block;
+  width: calc(100% - 64px);
+  height: 1px;
+  margin: 0 auto;
+  background-color: #DDDEE2;
+  position: absolute;
+  bottom: 0;
+}
+
+.accordion-item.active .accordion__btn:hover::after {
+  opacity: 0;
+  height: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header {
