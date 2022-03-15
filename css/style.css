@@ -852,13 +852,6 @@ button:hover .custom-arrow__tail {
   display: none;
 }
 
-@media (max-width: 1350px) {
-  .main-nav__link {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 @media (max-width: 1150px) {
   .main-nav__link svg {
     display: block;
@@ -1489,9 +1482,6 @@ button:hover .custom-arrow__tail {
   .header__flex {
     gap: 16px;
   }
-  .header__logo {
-    margin-right: auto;
-  }
 }
 
 @media (max-width: 1150px) {
@@ -1613,6 +1603,12 @@ button:hover .custom-arrow__tail {
 
 .header--sticky .main-nav__link.active, .header--sticky .main-nav__link:hover, .header--sticky .main-nav__link:focus, .header--sticky .main-nav__link:active {
   color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .header--sticky .header__flex {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 600px) {

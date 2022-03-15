@@ -52,10 +52,6 @@
     gap: 16px;
   }
 
-  .header__logo {
-    margin-right: auto;
-  }
-
 }
 
 @media (max-width: 1150px) {
@@ -188,6 +184,12 @@
     &:focus,
     &:active {
       color: #ffffff;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .header__flex {
+      padding: 10px 0;
     }
   }
 
