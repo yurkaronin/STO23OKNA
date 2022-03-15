@@ -126,9 +126,7 @@
       color: #000000;
     }
 
-    .menu-show .header .whatsapp img {
-      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
-    }
+
 
     .main-nav__link {
       color: #000000;
@@ -171,13 +169,11 @@
     color: #000000;
   }
 
-  .menu-show .header .whatsapp img {
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
-  }
+
 
   .main-nav__link {
     color: #000000;
-    padding: 28px 16px;
+    // padding: 28px 16px;
 
     &.active,
     &:hover,
