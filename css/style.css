@@ -2381,10 +2381,13 @@ button:hover .custom-arrow__tail {
   .calculate-free {
     background-color: #F6F6F7;
     background-image: none !important;
-    padding-bottom: 48px;
+    padding-bottom: 48px !important;
     padding-top: 0;
     color: #1C213F;
     padding: 0;
+  }
+  .calculate-free--two {
+    padding-bottom: 0 !important;
   }
   .calculate-free::after {
     display: none;

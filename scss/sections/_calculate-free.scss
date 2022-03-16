@@ -160,8 +160,12 @@
   .calculate-free {
     background-color: #F6F6F7;
     background-image: none !important;
-    padding-bottom: 48px;
+    padding-bottom: 48px !important;
     padding-top: 0;
+
+    &--two {
+      padding-bottom: 0 !important;
+    }
 
     color: #1C213F;
     padding: 0;
