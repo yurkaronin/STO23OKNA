@@ -1657,6 +1657,9 @@ button:hover .custom-arrow__tail {
   .header--sticky .header__logo {
     max-width: 108px;
   }
+  .header--sticky .header__flex {
+    padding: 12px 0;
+  }
 }
 
 @media (max-width: 425px) {
