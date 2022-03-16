@@ -449,7 +449,7 @@ button:hover .custom-arrow__tail {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 140%;
+  line-height: 1;
   color: #1C213F;
   text-transform: uppercase;
 }
@@ -469,7 +469,7 @@ button:hover .custom-arrow__tail {
 .title--decorate::after {
   display: block;
   content: "";
-  height: 55%;
+  height: 100%;
   width: 6px;
   background-color: #A6BF2A;
   position: absolute;
@@ -479,9 +479,6 @@ button:hover .custom-arrow__tail {
 @media (max-width: 600px) {
   .title {
     font-size: 32px;
-  }
-  .title--decorate::after {
-    height: 65%;
   }
 }
 
