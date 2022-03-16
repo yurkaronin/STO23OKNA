@@ -2,6 +2,9 @@ let ourWorksSwiper = new Swiper(".js-our-works-swip", {
   spaceBetween: 0,
   loop: true,
   slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".js-our-works-pagination",
     clickable: true,
@@ -35,6 +38,9 @@ let reviewsSwiper = new Swiper(".js-reviews-swip", {
   spaceBetween: 32,
   loop: true,
   slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".js-reviews-pagination",
     clickable: true,

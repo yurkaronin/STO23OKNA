@@ -1,4 +1,3 @@
-// кнопка 
 .button {
   padding: 0;
   display: flex;
@@ -94,6 +93,7 @@
   .button__text {
     padding: 16px 17px 14px 17px;
   }
+
   .button__icon {
     width: 47px;
   }
@@ -105,5 +105,5 @@
   .button__text {
     text-align: initial !important;
   }
-  
+
 }

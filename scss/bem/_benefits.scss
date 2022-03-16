@@ -1,4 +1,3 @@
-// преимущества 
 .benefits {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 
@@ -48,7 +47,6 @@
 @media (max-width: 1024px) {
   .benefits__item-flex {
     gap: 16px;
-    // padding: 20px 24px;
     padding: 38px 24px 40px;
   }
 
@@ -89,6 +87,7 @@
   .benefits__item-flex svg path {
     stroke: #4680FE;
   }
+
   .benefits__item-flex:first-child {
     padding-left: 14px;
   }
@@ -100,4 +99,3 @@
     padding: 30px 24px 21px;
   }
 }
-

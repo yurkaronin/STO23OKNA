@@ -9,7 +9,6 @@
       filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
     }
 
-
   }
 
   .telephone {
@@ -18,7 +17,6 @@
     img {
       filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
     }
-
 
   }
 }
@@ -58,7 +56,6 @@
       transform: none;
     }
   }
-
 
 }
 
@@ -169,10 +166,12 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+
   .footer__developer svg {
     order: -1;
     margin-right: 16px;
   }
+
   .footer__right {
     gap: 16px;
   }

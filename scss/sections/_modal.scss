@@ -69,7 +69,6 @@
   margin: auto;
   transform: translateX(-100%);
   transition: all 0.3s;
-
   border-radius: 24px 24px 24px 6px;
 }
 
@@ -166,11 +165,12 @@
   .modal__close-button span {
     width: 32px;
   }
-  
+
   .modal__wrapper {
     margin: 0;
     border-radius: 24px 0 24px 6px;
   }
+
   .modal .section__header--mod {
     margin-bottom: 24px;
     padding-bottom: 23px !important;

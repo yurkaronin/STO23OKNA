@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 100%;
   }
-  
+
   .header {
     background-color: #ffffff;
     color: #1C213F;
@@ -13,6 +13,7 @@
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 24px 24px;
   }
+
   .logo .logo-text {
     fill: #1C213F;
   }
@@ -22,6 +23,7 @@
   .button-menu span::before {
     background-color: #1C213F;
   }
+
   .header .telephone {
     color: #1C213F;
   }
@@ -39,4 +41,3 @@
     overflow-x: hidden;
   }
 }
-

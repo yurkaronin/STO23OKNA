@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --header-height: 60px;
   --ff-1: 'Open Sans', sans-serif;
@@ -7,7 +6,6 @@
   --ff-4: 'Rubik', sans-serif;
 }
 
-/* rubik-regular - latin_cyrillic */
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
@@ -16,7 +14,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* oswald-500 - latin_cyrillic */
 @font-face {
   font-family: 'Oswald';
   font-style: normal;
@@ -25,7 +22,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* open-sans-regular - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -34,7 +30,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* open-sans-600 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -43,7 +38,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* open-sans-700 - latin_cyrillic */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -52,7 +46,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -61,7 +54,6 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* базовые стили  */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -108,6 +100,23 @@ textarea {
 
 .main {
   overflow: hidden;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 }
 
 .button {
@@ -255,6 +264,46 @@ button:hover .custom-arrow__tail {
   transition: 0.3s;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  position: initial;
+  border: none;
+  background: #A6BF2A;
+  width: 56px;
+  height: 56px;
+  -webkit-box-shadow: 0 -4px #00000029 inset;
+          box-shadow: 0 -4px #00000029 inset;
+  border-radius: 6px;
+  margin: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0 0 transparent;
+          box-shadow: 0 0 transparent;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev *:focus,
+.swiper-button-next:hover,
+.swiper-button-next *:focus {
+  background-color: #00B2D2;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev .custom-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .section {
   padding: 50px 0 64px;
 }
@@ -320,46 +369,6 @@ button:hover .custom-arrow__tail {
   display: -ms-flexbox;
   display: flex;
   gap: 16px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: initial;
-  border: none;
-  background: #A6BF2A;
-  width: 56px;
-  height: 56px;
-  -webkit-box-shadow: 0 -4px #00000029 inset;
-          box-shadow: 0 -4px #00000029 inset;
-  border-radius: 6px;
-  margin: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.swiper-button-prev:active,
-.swiper-button-next:active {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-box-shadow: 0 0 transparent;
-          box-shadow: 0 0 transparent;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-prev *:focus,
-.swiper-button-next:hover,
-.swiper-button-next *:focus {
-  background-color: #00B2D2;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
-.swiper-button-prev .custom-arrow {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .section__header {
@@ -493,12 +502,6 @@ button:hover .custom-arrow__tail {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .buttons-list {
@@ -725,17 +728,6 @@ button:hover .custom-arrow__tail {
   .dude {
     display: none !important;
   }
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(0 0 0 0);
 }
 
 .wrapper {
@@ -1135,7 +1127,6 @@ button:hover .custom-arrow__tail {
 
 .custom-form textarea {
   resize: none !important;
-  /* Запрещаем изменять размер */
 }
 
 .custom-form__wrapper {
@@ -2175,6 +2166,10 @@ button:hover .custom-arrow__tail {
 
 .our-works .swiper {
   padding: 20px 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 425px) {

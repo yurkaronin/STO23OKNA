@@ -1,0 +1,30 @@
+.swiper-button-prev,
+.swiper-button-next {
+  position: initial;
+  border: none;
+  background: #A6BF2A;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 -4px #00000029 inset;
+  border-radius: 6px;
+  margin: 0;
+  transition: all 0.5s ease;
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 transparent;
+  }
+
+  &:hover,
+  *:focus {
+    background-color: #00B2D2;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev .custom-arrow {
+  transform: rotate(180deg);
+}

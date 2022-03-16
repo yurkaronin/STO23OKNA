@@ -1,14 +1,15 @@
 .when-repairs {
   padding-bottom: 65px;
 }
+
 .when-repairs__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 32px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   li {
     width: calc(25% - 32px);
@@ -64,13 +65,7 @@
 }
 
 .when-repairs__img {
-  // transition: 1s;
-  // overflow: hidden;
 
-  // &:hover {
-  //   transform: scale(1.1);
-  //  }
-  
   &:hover {
     .when-repairs__icon {
       background-color: #00B2D2;
@@ -81,7 +76,8 @@
 @media (max-width: 1024px) {
   .when-repairs {
     padding-bottom: 53px;
-}
+  }
+
   .when-repairs__list {
     gap: 32px;
   }
