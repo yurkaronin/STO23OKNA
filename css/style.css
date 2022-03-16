@@ -2392,6 +2392,9 @@ button:hover .custom-arrow__tail {
   .calculate-free--two {
     padding-bottom: 0 !important;
   }
+  .calculate-free--two .custom-form {
+    margin-bottom: 48px;
+  }
   .calculate-free::after {
     display: none;
   }
