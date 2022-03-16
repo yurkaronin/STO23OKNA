@@ -49,8 +49,7 @@
 
 .button {
 
-  &:hover,
-  &:focus {
+  &:hover {
     .button__text {
       background-color: #00B2D2;
     }

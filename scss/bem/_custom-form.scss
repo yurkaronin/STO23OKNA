@@ -53,11 +53,6 @@
   }
 }
 
-
-.custom-form__politic {}
-
-.custom-form__submit-button {}
-
 .custom-form__label--accept {
   margin: 0;
   position: relative;
@@ -77,8 +72,16 @@
   background-repeat: no-repeat;
 }
 
+.custom-form__label--accept:hover input[type=checkbox]+.custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-off-hover.svg);
+}
+
 .custom-form__label--accept input[type=checkbox]:checked+.custom-form__politic::before {
   background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.custom-form__label--accept:hover input[type=checkbox]:checked+.custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-on-hover.svg);
 }
 
 @media (max-width: 650px) {

@@ -136,6 +136,10 @@
 }
 
 @media (max-width: 510px) {
+  .header__flex {
+    padding: 16px 0;
+    border-bottom: none;
+  }
   .header .telephone {
     display: none;
   }
@@ -143,6 +147,7 @@
   .header__contacts {
     max-width: max-content;
     margin: 0;
+    margin-left: auto;
   }
 }
 

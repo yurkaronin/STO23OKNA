@@ -174,7 +174,7 @@ textarea {
   border-radius: 0px 6px 6px 0px;
 }
 
-.button:hover .button__text, .button:focus .button__text {
+.button:hover .button__text {
   background-color: #00B2D2;
 }
 
@@ -1210,8 +1210,16 @@ button:hover .custom-arrow__tail {
   background-repeat: no-repeat;
 }
 
+.custom-form__label--accept:hover input[type=checkbox] + .custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-off-hover.svg);
+}
+
 .custom-form__label--accept input[type=checkbox]:checked + .custom-form__politic::before {
   background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.custom-form__label--accept:hover input[type=checkbox]:checked + .custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-on-hover.svg);
 }
 
 @media (max-width: 650px) {
@@ -1590,6 +1598,10 @@ button:hover .custom-arrow__tail {
 }
 
 @media (max-width: 510px) {
+  .header__flex {
+    padding: 16px 0;
+    border-bottom: none;
+  }
   .header .telephone {
     display: none;
   }
@@ -1598,6 +1610,7 @@ button:hover .custom-arrow__tail {
     max-width: -moz-max-content;
     max-width: max-content;
     margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -2607,6 +2620,22 @@ button:hover .custom-arrow__tail {
   }
 }
 
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+  .footer__developer svg {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 16px;
+  }
+  .footer__right {
+    gap: 16px;
+  }
+}
+
 @media (max-width: 550px) {
   .footer__left {
     gap: 24px;
@@ -2689,7 +2718,7 @@ button:hover .custom-arrow__tail {
   content: "";
   display: block;
   width: 100%;
-  height: 100%;
+  height: 102%;
   z-index: 0;
   background-color: #00000061;
   position: absolute;

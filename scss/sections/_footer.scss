@@ -165,6 +165,20 @@
 
 }
 
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 39px;
+    padding-bottom: 40px;
+  }
+  .footer__developer svg {
+    order: -1;
+    margin-right: 16px;
+  }
+  .footer__right {
+    gap: 16px;
+  }
+}
+
 @media (max-width: 550px) {
   .footer__left {
     gap: 24px;
