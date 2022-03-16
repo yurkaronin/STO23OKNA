@@ -7,7 +7,7 @@ for (let callbackButton of callbackButtons) {
 
 };
 
-let closeBtns = document.querySelectorAll('#close-modal');
+let closeBtns = document.querySelectorAll('.modal__close-button');
 for (let closeBtn of closeBtns) {
   closeBtn.addEventListener("click", function (evt) {
     evt.preventDefault();

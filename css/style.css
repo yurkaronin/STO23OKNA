@@ -2823,6 +2823,14 @@ button:hover .custom-arrow__tail {
   opacity: 1;
 }
 
+.modal .custom-form__wrapper--mod {
+  margin-top: 10px;
+}
+
+.modal--success .section__header {
+  padding-bottom: 33px;
+}
+
 @media (max-width: 425px) {
   .modal__wrapper {
     padding: 25px 21px 34px;
