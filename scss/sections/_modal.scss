@@ -87,7 +87,7 @@
   justify-content: center;
   align-items: center;
   background-color: #A6BF2A;
-  border-radius: 0px 6px 0px 0px;
+  border-radius: 0 0 0 6px;
   padding: 32px;
 
   &:active {
@@ -161,6 +161,7 @@
   
   .modal__wrapper {
     margin: 0;
+    border-radius: 24px 0 24px 6px;
   }
   .modal .section__header--mod {
     margin-bottom: 24px;
