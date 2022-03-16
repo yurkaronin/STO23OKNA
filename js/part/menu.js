@@ -1,23 +1,17 @@
 // показать меню при клике на кнопку
 if (menuButton) {
   menuButton.addEventListener('click', function (r) {
-    // document.body.classList.toggle('custom-lock');
     document.body.classList.toggle('menu-show');
-    menuButton.classList.toggle('active');
-    if (window.innerWidth > 600 && window.innerWidth <= 1150 && !document.body.classList.contains('menu-show') && header.classList.contains('header--sticky')) {
-      headerLogo.src = 'img/logotype/logo-black.svg';
-    } else if (window.innerWidth > 600 && window.innerWidth <= 1150 && document.body.classList.contains('menu-show')) {
-      headerLogo.src = 'img/logotype/logo-black.svg';
-    } else {
+
+    if (!header.classList.contains('header--sticky') && !document.body.classList.contains('menu-show')) {
       headerLogo.src = 'img/logotype/logo.svg';
+    } else {
+      headerLogo.src = 'img/logotype/logo-black.svg';
     }
+
   });
 
 };
-
-
-
-
 
 // //плавная прокрутка до блока js
 let anchors = document.querySelectorAll('a[data-target^="anchor"]');
@@ -38,9 +32,8 @@ for (let anchor of anchors) {
       behavior: "smooth"
     });
     // свернуть меню при клике по пункту меню на мобилках
-    if (menuButton) {
+    if (document.body.classList.contains('menu-show')) {
       document.body.classList.remove('menu-show');
-      menuButton.classList.remove('active');
       anchor.classList.remove('active');
     }
   });

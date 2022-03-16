@@ -32,6 +32,18 @@
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
   }
 
+  .button-menu span {
+    height: 0;
+  }
+  
+  .button-menu span:after {
+    transform: rotate(45deg);
+  }
+  
+  .button-menu span:before {
+    transform: rotate(-45deg);
+  }
+
 }
 
 @media (max-width: 510px) {

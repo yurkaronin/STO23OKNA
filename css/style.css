@@ -993,20 +993,6 @@ button:hover .custom-arrow__tail {
           transform: translateY(11px);
 }
 
-.button-menu.active span {
-  height: 0;
-}
-
-.button-menu.active span:after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.button-menu.active span:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 @media (max-width: 1150px) {
   .button-menu {
     display: -webkit-box;
@@ -1463,8 +1449,8 @@ button:hover .custom-arrow__tail {
   z-index: 20;
   width: 100%;
   max-width: 100%;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__flex {
@@ -2910,6 +2896,20 @@ button:hover .custom-arrow__tail {
 .menu-show .header .whatsapp img {
   -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.menu-show .button-menu span {
+  height: 0;
+}
+
+.menu-show .button-menu span:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-show .button-menu span:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 @media (max-width: 510px) {
