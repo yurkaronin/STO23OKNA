@@ -2833,11 +2833,12 @@ button:hover .custom-arrow__tail {
   .modal__close-button span {
     width: 32px;
   }
-}
-
-@media (max-width: 425px) {
   .modal__wrapper {
     margin: 0;
+  }
+  .modal .section__header--mod {
+    margin-bottom: 24px;
+    padding-bottom: 23px !important;
   }
 }
 
