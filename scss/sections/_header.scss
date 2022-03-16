@@ -175,11 +175,18 @@
   .main-nav__link {
     color: #000000;
 
-    &.active,
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       color: #ffffff;
+      background: #00B2D2;
+      outline: none;
+    }
+
+    &:active,
+    &:focus,
+    & .active {
+      color: #ffffff;
+      background: #A6BF2A;
+      outline: none;
     }
   }
 

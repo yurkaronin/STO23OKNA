@@ -38,12 +38,25 @@
   &:hover {
     background: #00B2D2;
     color: #ffffff;
-    outline: none;
+    // outline: none;
 
     svg path {
       stroke: #ffffff;
     }
   }
+
+  &:active,
+  &:focus,
+  & .active {
+    color: #ffffff;
+    background: #A6BF2A;
+    // outline: none;
+
+    svg path {
+      stroke: #ffffff;
+    }
+  }
+
 }
 
 .main-nav__link svg {

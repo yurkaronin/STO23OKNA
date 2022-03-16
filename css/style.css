@@ -833,10 +833,20 @@ button:hover .custom-arrow__tail {
 .main-nav__link:hover {
   background: #00B2D2;
   color: #ffffff;
-  outline: none;
 }
 
 .main-nav__link:hover svg path {
+  stroke: #ffffff;
+}
+
+.main-nav__link:active, .main-nav__link:focus,
+.main-nav__link .active {
+  color: #ffffff;
+  background: #A6BF2A;
+}
+
+.main-nav__link:active svg path, .main-nav__link:focus svg path,
+.main-nav__link .active svg path {
   stroke: #ffffff;
 }
 
@@ -1635,8 +1645,17 @@ button:hover .custom-arrow__tail {
   color: #000000;
 }
 
-.header--sticky .main-nav__link.active, .header--sticky .main-nav__link:hover, .header--sticky .main-nav__link:focus, .header--sticky .main-nav__link:active {
+.header--sticky .main-nav__link:hover {
   color: #ffffff;
+  background: #00B2D2;
+  outline: none;
+}
+
+.header--sticky .main-nav__link:active, .header--sticky .main-nav__link:focus,
+.header--sticky .main-nav__link .active {
+  color: #ffffff;
+  background: #A6BF2A;
+  outline: none;
 }
 
 @media (max-width: 1024px) {

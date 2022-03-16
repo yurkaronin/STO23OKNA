@@ -38,9 +38,10 @@ for (let anchor of anchors) {
       behavior: "smooth"
     });
     // свернуть меню при клике по пункту меню на мобилках
-    if (window.innerWidth <= 1150) {
+    if (menuButton) {
       document.body.classList.remove('menu-show');
-      console.log('test');
+      menuButton.classList.remove('active');
+      anchor.classList.remove('active');
     }
   });
 };
