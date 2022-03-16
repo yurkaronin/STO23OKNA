@@ -116,11 +116,12 @@
 
 @media (max-width: 425px) {
   .accordion__btn {
-    padding: 20px 30px;
+    padding: 20px 24px;
   }
 
   .accordion-title {
     font-size: 18px;
+    text-align: initial;
   }
 
   .accordion__content {

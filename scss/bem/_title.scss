@@ -4,8 +4,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  // line-height: 140%;
-  line-height: 1;
+  line-height: 140%;
   color: #1C213F;
   text-transform: uppercase;
 
@@ -19,7 +18,7 @@
     &::after {
       display: block;
       content: "";
-      height: 100%;
+      height: 70%;
       width: 6px;
       background-color: #A6BF2A;
       position: absolute;
@@ -33,6 +32,6 @@
     font-size: 32px;
   }
   .title--decorate::after {
-    
+    height: 90%;
   }
 }

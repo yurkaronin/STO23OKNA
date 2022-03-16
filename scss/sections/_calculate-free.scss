@@ -201,7 +201,7 @@
     display: block;
     width: 100%;
     margin-bottom: 1px;
-    transform: translateY(-21px);
+    // transform: translateY(-21px);
 
     img {
       display: block;
@@ -215,6 +215,7 @@
 
 
 }
+
 
 @media (max-width: 425px) {
   .calculate-free .section__header {

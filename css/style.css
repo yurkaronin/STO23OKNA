@@ -256,7 +256,7 @@ button:hover .custom-arrow__tail {
 }
 
 .section {
-  padding: 50px 0 60px;
+  padding: 50px 0 64px;
 }
 
 .section__flex {
@@ -268,15 +268,6 @@ button:hover .custom-arrow__tail {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-@media (max-width: 102px) {
-  .section {
-    padding: 55px 0 40px;
-  }
-  .section__flex {
-    gap: 36px;
-  }
 }
 
 .section__top {
@@ -401,6 +392,9 @@ button:hover .custom-arrow__tail {
   .section__title {
     font-size: 40px;
   }
+  .section__flex {
+    gap: 36px;
+  }
   .section__header {
     padding-bottom: 41px !important;
   }
@@ -441,6 +435,9 @@ button:hover .custom-arrow__tail {
   .section__title {
     margin-bottom: 8px;
   }
+  .section__flex {
+    gap: 24px;
+  }
 }
 
 .title {
@@ -449,7 +446,7 @@ button:hover .custom-arrow__tail {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1;
+  line-height: 140%;
   color: #1C213F;
   text-transform: uppercase;
 }
@@ -469,7 +466,7 @@ button:hover .custom-arrow__tail {
 .title--decorate::after {
   display: block;
   content: "";
-  height: 100%;
+  height: 70%;
   width: 6px;
   background-color: #A6BF2A;
   position: absolute;
@@ -479,6 +476,9 @@ button:hover .custom-arrow__tail {
 @media (max-width: 600px) {
   .title {
     font-size: 32px;
+  }
+  .title--decorate::after {
+    height: 90%;
   }
 }
 
@@ -584,6 +584,9 @@ button:hover .custom-arrow__tail {
   .always-ready__title {
     max-width: 350px;
     text-align: initial;
+  }
+  .always-ready {
+    padding-bottom: 48px;
   }
 }
 
@@ -1399,10 +1402,11 @@ button:hover .custom-arrow__tail {
 
 @media (max-width: 425px) {
   .accordion__btn {
-    padding: 20px 30px;
+    padding: 20px 24px;
   }
   .accordion-title {
     font-size: 18px;
+    text-align: initial;
   }
   .accordion__content {
     padding: 0 24px;
@@ -2041,7 +2045,8 @@ button:hover .custom-arrow__tail {
 
 @media (max-width: 425px) {
   .our-services {
-    padding-top: 84px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .our-services__img {
     margin-bottom: 14px;
@@ -2155,6 +2160,12 @@ button:hover .custom-arrow__tail {
 @media (max-width: 550px) {
   .choose-us__item {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .choose-us {
+    padding-top: 37px;
   }
 }
 
@@ -2416,8 +2427,6 @@ button:hover .custom-arrow__tail {
     display: block;
     width: 100%;
     margin-bottom: 1px;
-    -webkit-transform: translateY(-21px);
-            transform: translateY(-21px);
   }
   .calculate-free__top-image img {
     display: block;
@@ -2495,7 +2504,7 @@ button:hover .custom-arrow__tail {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 13px;
+  gap: 6px 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2584,13 +2593,12 @@ button:hover .custom-arrow__tail {
 @media (max-width: 1024px) {
   .footer {
     padding-top: 55px;
-    padding-bottom: 54px;
+    padding-bottom: 55px;
   }
   .footer__left {
     gap: 26px;
   }
   .footer__contact {
-    gap: 16px;
     max-width: 215px;
     width: 100%;
   }
@@ -2625,7 +2633,7 @@ button:hover .custom-arrow__tail {
 
 @media (max-width: 768px) {
   .footer {
-    padding-top: 39px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
   .footer__developer svg {
@@ -2642,10 +2650,6 @@ button:hover .custom-arrow__tail {
 @media (max-width: 550px) {
   .footer__left {
     gap: 24px;
-  }
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 20px;
   }
   .footer__left {
     -webkit-box-orient: vertical;
