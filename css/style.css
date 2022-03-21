@@ -633,6 +633,9 @@ button:hover .custom-arrow__tail {
 .portfolio-card__photo img {
   display: block;
   width: 100%;
+  max-height: 195px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .portfolio-card__label {
