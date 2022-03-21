@@ -115,6 +115,9 @@
   .our-services__list li {
     width: 100%;
   }
+  .our-services__item:hover {
+    transform: none;
+  }
 
 }
 

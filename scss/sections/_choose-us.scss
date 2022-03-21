@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
-  margin-bottom: 3px;
+  margin-bottom: 16px;
 }
 
 .choose-us__item {
@@ -38,19 +38,23 @@
   line-height: 1.4;
   text-transform: uppercase;
   color: #1C213F;
-  padding-bottom: 15px;
+  // padding-bottom: 15px;
+  padding-bottom: 0;
   position: relative;
-  margin-bottom: 14px;
+  // margin-bottom: 14px;
+  margin-bottom: 0;
 
   &:after {
     content: "";
-    display: block;
+    // display: block;
     position: absolute;
     left: 0;
     bottom: 0;
     height: 1px;
     background-color: #DDDEE2;
     width: 80px;
+
+    display: none;
   }
 }
 
@@ -62,6 +66,8 @@
   font-size: 16px;
   line-height: 1.5;
   margin-top: auto;
+
+  display: none;
 }
 
 .choose-us__item:hover {

@@ -603,9 +603,6 @@ button:hover .custom-arrow__tail {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 24px;
@@ -658,25 +655,26 @@ button:hover .custom-arrow__tail {
 .portfolio-card__title {
   margin: 0;
   position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   color: #1C213F;
   font-family: var(--ff-2);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
   text-transform: uppercase;
+  min-height: 56px;
 }
 
 .portfolio-card__title::after {
   content: "";
-  display: block;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 1px;
   background-color: #DDDEE2;
   width: 80px;
+  display: none;
 }
 
 .portfolio-card__desc {
@@ -691,6 +689,10 @@ button:hover .custom-arrow__tail {
 @media (max-width: 600px) {
   .portfolio-card {
     margin: 0 auto;
+  }
+  .portfolio-card:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
@@ -1899,6 +1901,10 @@ button:hover .custom-arrow__tail {
   .when-repairs__list li {
     width: 100%;
   }
+  .when-repairs__img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2040,6 +2046,10 @@ button:hover .custom-arrow__tail {
   .our-services__list li {
     width: 100%;
   }
+  .our-services__item:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2071,7 +2081,7 @@ button:hover .custom-arrow__tail {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 32px;
-  margin-bottom: 3px;
+  margin-bottom: 16px;
 }
 
 .choose-us__item {
@@ -2120,20 +2130,20 @@ button:hover .custom-arrow__tail {
   line-height: 1.4;
   text-transform: uppercase;
   color: #1C213F;
-  padding-bottom: 15px;
+  padding-bottom: 0;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 0;
 }
 
 .choose-us__title:after {
   content: "";
-  display: block;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 1px;
   background-color: #DDDEE2;
   width: 80px;
+  display: none;
 }
 
 .choose-us__text {
@@ -2144,6 +2154,7 @@ button:hover .custom-arrow__tail {
   font-size: 16px;
   line-height: 1.5;
   margin-top: auto;
+  display: none;
 }
 
 .choose-us__item:hover .choose-us__icon {
@@ -2178,6 +2189,12 @@ button:hover .custom-arrow__tail {
   max-width: -moz-max-content;
   max-width: max-content;
   margin: 0 auto;
+}
+
+.our-works .our-works__swiper .swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media (max-width: 425px) {
@@ -2429,7 +2446,7 @@ button:hover .custom-arrow__tail {
   .calculate-free__top-image {
     display: block;
     width: 100%;
-    margin-bottom: 1px;
+    margin-bottom: 12px;
   }
   .calculate-free__top-image img {
     display: block;
